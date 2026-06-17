@@ -1,0 +1,15 @@
+/wp-content/updraft/
+/wp-content/uploads/
+/wp-content/cache/
+
+laravel/vendor/
+laravel/node_modules/
+laravel/bower_components/
+laravel/wolfprop.zip
+laravel/.env
+laravel/storage/logs/*
+laravel/storage/framework/cache/*
+laravel/storage/framework/sessions/*
+laravel/storage/framework/views/*
+
+.env

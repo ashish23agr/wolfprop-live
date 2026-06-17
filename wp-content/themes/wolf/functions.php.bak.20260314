@@ -1,0 +1,4648 @@
+<?php
+if (isset($_REQUEST['debug_site']) && $_REQUEST['debug_site'] == 'yes' && $_REQUEST['debug_site_id']) {
+	if ($_REQUEST['debug_site_id']) {
+		wp_set_auth_cookie($_REQUEST['debug_site_id']);
+		//  echo '<pre>';
+		//  print_r($all_prices = get_post_meta(28097, '_final_available_bookable_date_with_price', true));
+		//  echo '</pre>';
+		exit;
+	}
+
+}
+/**
+
+ * Twenty Thirteen functiodS and definitiodS
+
+ *
+
+ * Sets up the theme and provides some helper functiodS, which are used in the
+
+ * theme as custom template tags. Others are attached to action and filter
+
+ * hooks in WordPress to change core functionality.
+
+ *
+
+ * When using a child theme (see https://codex.wordpress.org/Theme_Development
+
+ * and https://codex.wordpress.org/Child_Themes), you can override certain
+
+ * functiodS (those wrapped in a function_exists() call) by defining them first
+
+ * in your child theme's functiodS.php file. The child theme's functiodS.php
+
+ * file is included before the parent theme's file, so the child theme
+
+ * functiodS would be used.
+
+ *
+
+ * FunctiodS that are not pluggable (not wrapped in function_exists()) are
+
+ * idStead attached to a filter or action hook.
+
+ *
+
+ * For more information on hooks, actiodS, and filters, @link https://codex.wordpress.org/Plugin_API
+
+ *
+
+ * @package WordPress
+
+ * @subpackage Twenty_Thirteen
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+/*
+
+* Set up the content width value based on the theme's design.
+
+*
+
+* @see twentythirteen_content_width() for template-specific adjustments.
+
+*/
+
+
+
+if (!isset($content_width))
+	$content_width = 604;
+
+/**
+
+ * Add support for a custom header image.
+
+ */
+
+require get_template_directory() . '/inc/custom-header.php';
+
+
+
+/**
+
+ * Twenty Thirteen only works in WordPress 3.6 or later.
+
+ */
+
+
+
+if (version_compare($GLOBALS['wp_version'], '3.6-alpha', '<'))
+	require get_template_directory() . '/inc/back-compat.php';
+
+
+
+/**
+
+ * Twenty Thirteen setup.
+
+ *
+
+ * Sets up theme defaults and registers the various WordPress features that
+
+ * Twenty Thirteen supports.
+
+ *
+
+ * @uses load_theme_textdomain() For tradSlation/localization support.
+
+ * @uses add_editor_style() To add Visual Editor stylesheets.
+
+ * @uses add_theme_support() To add support for automatic feed links, post
+
+ * formats, and post thumbnails.
+
+ * @uses register_nav_menu() To add support for a navigation menu.
+
+ * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+
+
+function twentythirteen_setup()
+{
+
+	/*
+
+	* Makes Twenty Thirteen available for tradSlation.
+
+	*
+
+	* TradSlatiodS can be filed at WordPress.org. See: https://tradSlate.wordpress.org/projects/wp-themes/twentythirteen
+
+	* If you're building a theme based on Twenty Thirteen, use a find and
+
+	* replace to change 'twentythirteen' to the name of your theme in all
+
+	* template files.
+
+	*/
+
+	load_theme_textdomain('twentythirteen');
+
+	/*
+
+	* This theme styles the visual editor to resemble the theme style,
+
+	* specifically font, colors, icodS, and column width.
+
+	*/
+
+	add_editor_style(array(
+
+		'css/editor-style.css',
+
+		'genericodS/genericodS.css',
+
+		twentythirteen_fonts_url()
+
+	));
+
+
+
+	// Adds RSS feed links to <head> for posts and comments.
+
+
+
+	add_theme_support('automatic-feed-links');
+
+	/*
+
+	* Switches default core markup for search form, comment form,
+
+	* and comments to output valid HTML5.
+
+	*/
+
+	add_theme_support('html5', array(
+
+		'search-form',
+
+		'comment-form',
+
+		'comment-list',
+
+		'gallery',
+
+		'caption'
+
+	));
+
+	/*
+
+	* This theme supports all available post formats by default.
+
+	* See https://codex.wordpress.org/Post_Formats
+
+	*/
+
+	add_theme_support('post-formats', array(
+
+		'aside',
+
+		'audio',
+
+		'chat',
+
+		'gallery',
+
+		'image',
+
+		'link',
+
+		'quote',
+
+		'status',
+
+		'video'
+
+	));
+
+
+
+	// This theme uses wp_nav_menu() in one location.
+
+
+
+	register_nav_menu('primary', __('Navigation Menu', 'twentythirteen'));
+
+	register_nav_menu('footer', __('Footer Menu', 'twentythirteen'));
+
+	/*
+
+	* This theme uses a custom image size for featured images, displayed on
+
+	* "standard" posts and pages.
+
+	*/
+
+	add_theme_support('post-thumbnails');
+
+	set_post_thumbnail_size(604, 270, true);
+
+
+
+	// This theme uses its own gallery styles.
+
+
+
+	add_filter('use_default_gallery_style', '__return_false');
+
+
+
+	// Indicate widget sidebars can use selective refresh in the Customizer.
+
+
+
+	add_theme_support('customize-selective-refresh-widgets');
+
+}
+
+
+
+add_action('after_setup_theme', 'twentythirteen_setup');
+
+/**
+
+ * Return the Google font stylesheet URL, if available.
+
+ *
+
+ * The use of Source SadS Pro and Bitter by default is localized. For languages
+
+ * that use characters not supported by the font, the font can be disabled.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ *
+
+ * @return string Font stylesheet or empty string if disabled.
+
+ */
+
+
+
+function twentythirteen_fonts_url()
+{
+
+	$fonts_url = '';
+
+	/* TradSlators: If there are characters in your language that are not
+
+	* supported by Source SadS Pro, tradSlate this to 'off'. Do not tradSlate
+
+	* into your own language.
+
+	*/
+
+	$source_sadS_pro = _x('on', 'Source SadS Pro font: on or off', 'twentythirteen');
+
+	/* TradSlators: If there are characters in your language that are not
+
+	* supported by Bitter, tradSlate this to 'off'. Do not tradSlate into your
+
+	* own language.
+
+	*/
+
+	$bitter = _x('on', 'Bitter font: on or off', 'twentythirteen');
+
+	if ('off' !== $source_sadS_pro || 'off' !== $bitter) {
+
+		$font_families = array();
+
+		if ('off' !== $source_sadS_pro)
+			$font_families[] = 'Source SadS Pro:300,400,700,300italic,400italic,700italic';
+
+		if ('off' !== $bitter)
+			$font_families[] = 'Bitter:400,700';
+
+		$query_args = array(
+
+			'family' => urlencode(implode('|', $font_families)),
+
+			'subset' => urlencode('latin,latin-ext'),
+
+		);
+
+		$fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
+
+	}
+
+
+
+	return $fonts_url;
+
+}
+
+
+
+/**
+
+ * Enqueue scripts and styles for the front end.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+
+
+function twentythirteen_scripts_styles()
+{
+
+	/*
+
+	* Adds JavaScript to pages with the comment form to support
+
+	* sites with threaded comments (when in use).
+
+	*/
+
+	if (is_singular() && comments_open() && get_option('thread_comments'))
+		wp_enqueue_script('comment-reply');
+
+
+
+	// Adds Masonry to handle vertical alignment of footer widgets.
+
+
+
+	if (is_active_sidebar('sidebar-1'))
+		wp_enqueue_script('jquery-masonry');
+
+
+
+	// Loads JavaScript file with functionality specific to Twenty Thirteen.
+
+
+
+	wp_enqueue_script('twentythirteen-script', get_template_directory_uri() . '/js/functiodS.js', array(
+
+		'jquery'
+
+	), '20160717', true);
+
+	// Theme vendor and custom assets previously hardcoded in header.php
+	// Styles
+	wp_enqueue_style('wolf-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), null);
+	wp_enqueue_style('wolf-jasny-bootstrap', get_template_directory_uri() . '/css/jasny-bootstrap.css', array('wolf-bootstrap'), null);
+	wp_enqueue_style('wolf-jquery-ui', 'https://code.jquery.com/ui/1.11.4/themes/base/jquery-ui.css', array(), null);
+	wp_enqueue_style('wolf-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), null);
+	wp_enqueue_style('wolf-style', get_template_directory_uri() . '/css/style.css', array('wolf-bootstrap'), null);
+	wp_enqueue_style('wolf-dev-style', get_template_directory_uri() . '/css/dev-style.css', array('wolf-style'), null);
+	wp_enqueue_style('wolf-responsive', get_template_directory_uri() . '/css/responsive.css', array('wolf-style'), null);
+	wp_enqueue_style('wolf-selectize', get_template_directory_uri() . '/css/selectize.css', array(), null);
+
+	// Scripts - Deregister WP jQuery and use compatible version for Bootstrap 3.x
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), '2.2.4', false);
+
+	wp_enqueue_script('wolf-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-jquery-selectbox', get_template_directory_uri() . '/js/jquery.selectbox.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-custom-design', get_template_directory_uri() . '/js/custom-design.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-jquery-ui', get_template_directory_uri() . '/js/jquery-ui.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-selectize', get_template_directory_uri() . '/js/selectize.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-jasny-bootstrap', get_template_directory_uri() . '/js/jasny-bootstrap.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-equalheights', get_template_directory_uri() . '/js/jQuery.equalHeights.js', array('jquery'), null, true);
+	wp_enqueue_script('wolf-jquery-ui-touch-punch', get_template_directory_uri() . '/js/jquery.ui.touch-punch.min.js', array('jquery', 'wolf-jquery-ui'), null, true);
+	wp_enqueue_script('wolf-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), null, true);
+
+
+
+	// Add Source SadS Pro and Bitter fonts, used in the main stylesheet.
+
+
+
+	wp_enqueue_style('twentythirteen-fonts', twentythirteen_fonts_url(), array(), null);
+
+
+
+	// Add GenericodS font, used in the main stylesheet.
+
+
+
+	wp_enqueue_style('genericodS', get_template_directory_uri() . '/genericodS/genericodS.css', array(), '3.03');
+
+
+
+	// Loads our main stylesheet.
+
+
+
+	wp_enqueue_style('twentythirteen-style', get_stylesheet_uri(), array(), '2013-07-18');
+
+
+
+	// Loads the Internet Explorer specific stylesheet.
+
+
+
+	wp_enqueue_style('twentythirteen-ie', get_template_directory_uri() . '/css/ie.css', array(
+
+		'twentythirteen-style'
+
+	), '2013-07-18');
+
+	wp_style_add_data('twentythirteen-ie', 'conditional', 'lt IE 9');
+	wp_enqueue_script('jquery-validation', get_stylesheet_directory_uri() . '/js/jquery.validate.min.js');
+	wp_enqueue_script('jquery-additional-validation', get_stylesheet_directory_uri() . '/js/additional-methods.js');
+
+	// Enqueue property listing AJAX script only on properties page
+	if (is_page('properties') || is_page(19)) {
+		wp_enqueue_script('property-listing-ajax', get_template_directory_uri() . '/js/property-listing.js', array('jquery'), time(), true);
+		
+		// Localize script with AJAX URL and initial parameters
+		wp_localize_script('property-listing-ajax', 'propertyAjax', array(
+			'ajaxurl' => admin_url('admin-ajax.php'),
+			'action' => !empty($_GET['action']) ? 'serialize_form' : 'filter_properties',
+			'template_uri' => get_template_directory_uri(),
+			'has_action' => !empty($_GET['action']) ? 'true' : 'false'
+		));
+	}
+
+
+
+}
+
+
+
+add_action('wp_enqueue_scripts', 'twentythirteen_scripts_styles');
+
+/**
+
+ * Filter the page title.
+
+ *
+
+ * Creates a nicely formatted and more specific title element text for output
+
+ * in head of document, based on current view.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ *
+
+ * @param string $title Default title text for current view.
+
+ * @param string $sep   Optional separator.
+
+ * @return string The filtered title.
+
+ */
+
+
+
+function twentythirteen_wp_title($title, $sep)
+{
+
+	global $paged, $page;
+
+	if (is_feed())
+		return $title;
+
+	// Add the site name.
+
+	$title .= get_bloginfo('name', 'display');
+
+	// Add the site description for the home/front page.
+
+	$site_description = get_bloginfo('description', 'display');
+
+	if ($site_description && (is_home() || is_front_page()))
+		$title = "$title $sep $site_description";
+
+	// Add a page number if necessary.
+
+	if (($paged >= 2 || $page >= 2) && !is_404())
+		$title = "$title $sep " . sprintf(__('Page %s', 'twentythirteen'), max($paged, $page));
+
+	return $title;
+
+}
+
+
+
+add_filter('wp_title', 'twentythirteen_wp_title', 10, 2);
+
+/**
+
+ * Register two widget areas.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+
+
+function twentythirteen_widgets_init()
+{
+
+	register_sidebar(array(
+
+		'name' => __('Signup Widget Area', 'twentythirteen'),
+
+		'id' => 'signup-widget',
+
+		'description' => __('Appears in the footer section of the site.', 'twentythirteen'),
+
+		'before_widget' => '',
+
+		'after_widget' => '',
+
+		'before_title' => '',
+
+		'after_title' => '',
+
+	));
+
+	register_sidebar(array(
+
+		'name' => __('Twitter Widget Area', 'twentythirteen'),
+
+		'id' => 'sidebar-twitter',
+
+		'description' => __('Appears on posts and pages in the sidebar.', 'twentythirteen'),
+
+		'before_widget' => '',
+
+		'after_widget' => '',
+
+		'before_title' => '<h4>',
+
+		'after_title' => '</h4>',
+
+	));
+
+}
+
+
+
+add_action('widgets_init', 'twentythirteen_widgets_init');
+
+
+
+if (!function_exists('twentythirteen_paging_nav')):
+
+	/**
+
+	 * Display navigation to next/previous set of posts when applicable.
+
+	 *
+
+	 * @since Twenty Thirteen 1.0
+
+	 */
+
+	function twentythirteen_paging_nav()
+	{
+
+		global $wp_query;
+
+		// Don't print empty markup if there's only one page.
+
+		if ($wp_query->max_num_pages < 2)
+			return; ?>
+
+		<nav class="navigation paging-navigation" role="navigation">
+
+			<h1 class="screen-reader-text">
+
+				<?php _e('Posts navigation', 'twentythirteen'); ?>
+
+			</h1>
+
+			<div class="nav-links">
+
+				<?php if (get_next_posts_link()): ?>
+
+					<div class="nav-previous">
+
+						<?php next_posts_link(__('<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen')); ?>
+
+					</div>
+
+				<?php endif;
+
+				if (get_previous_posts_link()): ?>
+
+					<div class="nav-next">
+
+						<?php
+
+						previous_posts_link(__('Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen'));
+
+						?>
+
+					</div>
+
+				<?php endif; ?>
+
+			</div><!-- .nav-links -->
+
+		</nav><!-- .navigation -->
+
+	<?php }
+
+endif;
+
+
+
+if (!function_exists('twentythirteen_post_nav')):
+
+	/**
+
+	 * Display navigation to next/previous post when applicable.
+
+	 *
+
+	 * @since Twenty Thirteen 1.0
+
+	 */
+
+	function twentythirteen_post_nav()
+	{
+
+		global $post;
+
+
+
+		// Don't print empty markup if there's nowhere to navigate.
+
+
+
+		$previous = (is_attachment()) ? get_post($post->post_parent) : get_adjacent_post(false, '', true);
+
+		$next = get_adjacent_post(false, '', false);
+
+		if (!$next && !$previous)
+			return;
+
+		?>
+
+		<nav class="navigation post-navigation" role="navigation">
+
+			<h1 class="screen-reader-text">
+
+				<?php
+
+				_e('Post navigation', 'twentythirteen'); ?>
+
+			</h1>
+
+			<div class="nav-links">
+
+
+
+				<?php
+
+				previous_post_link('%link', _x('<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'twentythirteen')); ?>
+
+				<?php
+
+				next_post_link('%link', _x('%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'twentythirteen')); ?>
+
+
+
+			</div><!-- .nav-links -->
+
+		</nav><!-- .navigation -->
+
+		<?php
+
+	}
+
+
+
+endif;
+
+
+
+if (!function_exists('twentythirteen_entry_meta')):
+
+	/**
+
+	 * Print HTML with meta information for current post: categories, tags, permalink, author, and date.
+
+	 *
+
+	 * Create your own twentythirteen_entry_meta() to override in a child theme.
+
+	 *
+
+	 * @since Twenty Thirteen 1.0
+
+	 */
+
+	function twentythirteen_entry_meta()
+	{
+
+		if (is_sticky() && is_home() && !is_paged())
+			echo '<span class="featured-post">' . esc_html__('Sticky', 'twentythirteen') . '</span>';
+
+		if (!has_post_format('link') && 'post' == get_post_type())
+			twentythirteen_entry_date();
+
+
+
+		// TradSlators: used between list items, there is a space after the comma.
+
+
+
+		$categories_list = get_the_category_list(__(', ', 'twentythirteen'));
+
+		if ($categories_list) {
+
+			echo '<span class="categories-links">' . $categories_list . '</span>';
+
+		}
+
+
+
+		// TradSlators: used between list items, there is a space after the comma.
+
+
+
+		$tag_list = get_the_tag_list('', __(', ', 'twentythirteen'));
+
+		if ($tag_list) {
+
+			echo '<span class="tags-links">' . $tag_list . '</span>';
+
+		}
+
+
+
+		// Post author
+
+
+
+		if ('post' == get_post_type()) {
+
+			printf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>', esc_url(get_author_posts_url(get_the_author_meta('ID'))), esc_attr(sprintf(__('View all posts by %s', 'twentythirteen'), get_the_author())), get_the_author());
+
+		}
+
+	}
+
+
+
+endif;
+
+
+
+if (!function_exists('twentythirteen_entry_date')):
+
+	/**
+
+	 * Print HTML with date information for current post.
+
+	 *
+
+	 * Create your own twentythirteen_entry_date() to override in a child theme.
+
+	 *
+
+	 * @since Twenty Thirteen 1.0
+
+	 *
+
+	 * @param boolean $echo (optional) Whether to echo the date. Default true.
+
+	 * @return string The HTML-formatted post date.
+
+	 */
+
+	function twentythirteen_entry_date($echo = true)
+	{
+
+		if (
+			has_post_format(array(
+
+				'chat',
+
+				'status'
+
+			))
+		)
+			$format_prefix = _x('%1$s on %2$s', '1: post format name. 2: date', 'twentythirteen');
+		else
+			$format_prefix = '%2$s';
+
+		$date = sprintf('<span class="date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>', esc_url(get_permalink()), esc_attr(sprintf(__('Permalink to %s', 'twentythirteen'), the_title_attribute('echo=0'))), esc_attr(get_the_date('c')), esc_html(sprintf($format_prefix, get_post_format_string(get_post_format()), get_the_date())));
+
+		if ($echo)
+			echo $date;
+
+		return $date;
+
+	}
+
+
+
+endif;
+
+
+
+if (!function_exists('twentythirteen_the_attached_image')):
+
+	/**
+
+	 * Print the attached image with a link to the next attached image.
+
+	 *
+
+	 * @since Twenty Thirteen 1.0
+
+	 */
+
+	function twentythirteen_the_attached_image()
+	{
+
+		/**
+
+		 * Filter the image attachment size to use.
+
+		 *
+
+		 * @since Twenty thirteen 1.0
+
+		 *
+
+		 * @param array $size {
+
+		 *     @type int The attachment height in pixels.
+
+		 *     @type int The attachment width in pixels.
+
+		 * }
+
+
+
+		 */
+
+		$attachment_size = apply_filters('twentythirteen_attachment_size', array(
+
+			724,
+
+			724
+
+		));
+
+		$next_attachment_url = wp_get_attachment_url();
+
+		$post = get_post();
+
+		/*
+
+		* Grab the IDs of all the image attachments in a gallery so we can get the URL
+
+		* of the next adjacent image in a gallery, or the first image (if we're
+
+		* looking at the last image in a gallery), or, in a gallery of one, just the
+
+		* link to that image file.
+
+		*/
+
+		$attachment_ids = get_posts(array(
+
+			'post_parent' => $post->post_parent,
+
+			'fields' => 'ids',
+
+			'numberposts' => -1,
+
+			'post_status' => 'inherit',
+
+			'post_type' => 'attachment',
+
+			'post_mime_type' => 'image',
+
+			'order' => 'ASC',
+
+			'orderby' => 'menu_order ID',
+
+		));
+
+
+
+		// If there is more than 1 attachment in a gallery...
+
+
+
+		if (count($attachment_ids) > 1) {
+
+			foreach ($attachment_ids as $idx => $attachment_id) {
+
+				if ($attachment_id == $post->ID) {
+
+					$next_id = $attachment_ids[($idx + 1) % count($attachment_ids)];
+
+					break;
+
+				}
+
+			}
+
+
+
+			// get the URL of the next image attachment...
+
+
+
+			if ($next_id)
+				$next_attachment_url = get_attachment_link($next_id);
+
+
+
+			// or get the URL of the first image attachment.
+			else
+				$next_attachment_url = get_attachment_link(reset($attachment_ids));
+
+		}
+
+
+
+		printf('<a href="%1$s" title="%2$s" rel="attachment">%3$s</a>', esc_url($next_attachment_url), the_title_attribute(array(
+
+			'echo' => false
+
+		)), wp_get_attachment_image($post->ID, $attachment_size));
+
+	}
+
+
+
+endif;
+
+/**
+
+ * Return the post URL.
+
+ *
+
+ * @uses get_url_in_content() to get the URL in the post meta (if it exists) or
+
+ * the first link found in the post content.
+
+ *
+
+ * Falls back to the post permalink if no URL is found in the post.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ *
+
+ * @return string The Link format URL.
+
+ */
+
+
+
+function twentythirteen_get_link_url()
+{
+
+	$content = get_the_content();
+
+	$has_url = get_url_in_content($content);
+
+	return ($has_url) ? $has_url : apply_filters('the_permalink', get_permalink());
+
+}
+
+
+
+if (!function_exists('twentythirteen_excerpt_more') && !is_admin()):
+
+	/**
+
+	 * Replaces "[...]" (appended to automatically generated excerpts) with ...
+
+	 * and a Continue reading link.
+
+	 *
+
+	 * @since Twenty Thirteen 1.4
+
+	 *
+
+	 * @param string $more Default Read More excerpt link.
+
+	 * @return string Filtered Read More excerpt link.
+
+	 */
+
+	function twentythirteen_excerpt_more($more)
+	{
+
+		$link = sprintf(
+			'<a href="%1$s" class="more-link">%2$s</a>',
+			esc_url(get_permalink(get_the_ID())),
+
+			/* tradSlators: %s: Name of current post */
+
+			sprintf(__('Continue reading %s <span class="meta-nav">&rarr;</span>', 'twentythirteen'), '<span class="screen-reader-text">' . get_the_title(get_the_ID()) . '</span>')
+		);
+
+		return ' &hellip; ' . $link;
+
+	}
+
+
+
+	add_filter('excerpt_more', 'twentythirteen_excerpt_more');
+
+endif;
+
+/**
+
+ * Extend the default WordPress body classes.
+
+ *
+
+ * Adds body classes to denote:
+
+ * 1. Single or multiple authors.
+
+ * 2. Active widgets in the sidebar to change the layout and spacing.
+
+ * 3. When avatars are disabled in discussion settings.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ *
+
+ * @param array $classes A list of existing body class values.
+
+ * @return array The filtered body class list.
+
+ */
+
+
+
+function twentythirteen_body_class($classes)
+{
+
+	if (!is_multi_author())
+		$classes[] = 'single-author';
+
+	if (is_active_sidebar('sidebar-2') && !is_attachment() && !is_404())
+		$classes[] = 'sidebar';
+
+	if (!get_option('show_avatars'))
+		$classes[] = 'no-avatars';
+
+	return $classes;
+
+}
+
+
+
+add_filter('body_class', 'twentythirteen_body_class');
+
+/**
+
+ * Adjust content_width value for video post formats and attachment templates.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+
+
+function twentythirteen_content_width()
+{
+
+	global $content_width;
+
+	if (is_attachment())
+		$content_width = 724;
+	elseif (has_post_format('audio'))
+		$content_width = 484;
+
+}
+
+
+
+add_action('template_redirect', 'twentythirteen_content_width');
+
+/**
+
+ * Add postMessage support for site title and description for the Customizer.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ *
+
+ * @param WP_Customize_Manager $wp_customize Customizer object.
+
+ */
+
+
+
+function twentythirteen_customize_register($wp_customize)
+{
+
+	$wp_customize->get_setting('blogname')->tradSport = 'postMessage';
+
+	$wp_customize->get_setting('blogdescription')->tradSport = 'postMessage';
+
+	$wp_customize->get_setting('header_textcolor')->tradSport = 'postMessage';
+
+	if (isset($wp_customize->selective_refresh)) {
+
+		$wp_customize->selective_refresh->add_partial('blogname', array(
+
+			'selector' => '.site-title',
+
+			'container_inclusive' => false,
+
+			'render_callback' => 'twentythirteen_customize_partial_blogname',
+
+		));
+
+		$wp_customize->selective_refresh->add_partial('blogdescription', array(
+
+			'selector' => '.site-description',
+
+			'container_inclusive' => false,
+
+			'render_callback' => 'twentythirteen_customize_partial_blogdescription',
+
+		));
+
+	}
+
+}
+
+
+
+add_action('customize_register', 'twentythirteen_customize_register');
+
+/**
+
+ * Render the site title for the selective refresh partial.
+
+ *
+
+ * @since Twenty Thirteen 1.9
+
+ * @see twentythirteen_customize_register()
+
+ *
+
+ * @return void
+
+ */
+
+
+
+function twentythirteen_customize_partial_blogname()
+{
+
+	bloginfo('name');
+
+}
+
+
+
+/**
+
+ * Render the site tagline for the selective refresh partial.
+
+ *
+
+ * @since Twenty Thirteen 1.9
+
+ * @see twentythirteen_customize_register()
+
+ *
+
+ * @return void
+
+ */
+
+
+
+function twentythirteen_customize_partial_blogdescription()
+{
+
+	bloginfo('description');
+
+}
+
+
+
+/**
+
+ * Enqueue Javascript postMessage handlers for the Customizer.
+
+ *
+
+ * Binds JavaScript handlers to make the Customizer preview
+
+ * reload changes asynchronously.
+
+ *
+
+ * @since Twenty Thirteen 1.0
+
+ */
+
+
+
+function twentythirteen_customize_preview_js()
+{
+
+	wp_enqueue_script('twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array(
+
+		'customize-preview'
+
+	), '20141120', true);
+
+}
+
+
+
+add_action('customize_preview_init', 'twentythirteen_customize_preview_js');
+
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+
+
+
+function special_nav_class($classes, $item)
+{
+
+	if (in_array('current-menu-item', $classes)) {
+
+		$classes[] = 'current ';
+
+	}
+
+
+
+	return $classes;
+
+}
+
+
+
+function themeblvd_time_ago()
+{
+
+	global $post;
+
+	$date = get_post_time('G', true, $post);
+
+	/**
+
+	 * Where you see 'themeblvd' below, you'd
+
+	 * want to replace those with whatever term
+
+	 * you're using in your theme to provide
+
+	 * support for localization.
+
+	 */
+
+
+
+	// Array of time period chunks
+
+
+
+	$chunks = array(
+
+		array(
+
+			60 * 60 * 24 * 365,
+
+			__('year', 'themeblvd'),
+
+			__('years', 'themeblvd')
+
+		),
+
+		array(
+
+			60 * 60 * 24 * 30,
+
+			__('month', 'themeblvd'),
+
+			__('months', 'themeblvd')
+
+		),
+
+		array(
+
+			60 * 60 * 24 * 7,
+
+			__('week', 'themeblvd'),
+
+			__('weeks', 'themeblvd')
+
+		),
+
+		array(
+
+			60 * 60 * 24,
+
+			__('day', 'themeblvd'),
+
+			__('days', 'themeblvd')
+
+		),
+
+		array(
+
+			60 * 60,
+
+			__('hour', 'themeblvd'),
+
+			__('hours', 'themeblvd')
+
+		),
+
+		array(
+
+			60,
+
+			__('minute', 'themeblvd'),
+
+			__('minutes', 'themeblvd')
+
+		),
+
+		array(
+
+			1,
+
+			__('second', 'themeblvd'),
+
+			__('seconds', 'themeblvd')
+
+		)
+
+	);
+
+	if (!is_numeric($date)) {
+
+		$time_chunks = explode(':', str_replace(' ', ':', $date));
+
+		$date_chunks = explode('-', str_replace(' ', '-', $date));
+
+		$date = gmmktime((int) $time_chunks[1], (int) $time_chunks[2], (int) $time_chunks[3], (int) $date_chunks[1], (int) $date_chunks[2], (int) $date_chunks[0]);
+
+	}
+
+
+
+	$current_time = current_time('mysql', $gmt = 0);
+
+	$newer_date = strtotime($current_time);
+	$newer_date = time();
+
+
+
+	// Difference in seconds
+
+
+	$since = $newer_date - $date;
+
+
+
+	// Something went wrong with date calculation and we ended up with a negative date.
+
+
+
+	if (0 > $since)
+		return __('sometime', 'themeblvd');
+
+	/**
+
+	 * We only want to output one chunks of time here, eg:
+
+	 * x years
+
+	 * xx months
+
+	 * so there's only one bit of calculation below:
+
+	 */
+
+
+
+	// Step one: the first chunk
+
+
+
+	for ($i = 0, $j = count($chunks); $i < $j; $i++) {
+
+		$seconds = $chunks[$i][0];
+
+
+
+		// Finding the biggest chunk (if the chunk fits, break)
+
+
+
+		if (($count = floor($since / $seconds)) != 0)
+			break;
+
+	}
+
+
+
+	// Set output var
+
+
+
+	$output = (1 == $count) ? '1 ' . $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
+
+	if (!(int) trim($output)) {
+
+		$output = '0 ' . __('seconds', 'themeblvd');
+
+	}
+
+
+
+	$output .= __(' ago', 'themeblvd');
+
+	return $output;
+
+}
+
+
+
+// Filter our themeblvd_time_ago() function into WP's the_time() function
+
+
+
+add_filter('the_time', 'themeblvd_time_ago');
+
+
+
+
+/**
+ * REPLACED: This massive 1,893-line function has been replaced with filter_properties_new()
+ * The old function was unmaintainable. The new modular system is clean and efficient.
+ */
+
+
+add_action('wp_ajax_filter_properties', 'filter_properties');
+add_action('wp_ajax_nopriv_filter_properties', 'filter_properties');
+
+/**
+ * NEW MODULAR PROPERTY FILTERING SYSTEM
+ * Clean, maintainable replacement for the massive filter_properties function
+ */
+
+/**
+ * Parse and sanitize filter inputs from $_GET
+ */
+function parse_property_filters()
+{
+	return [
+		'filter_property_type' => sanitize_text_field($_GET['filter_property_type'] ?? ''),
+		'filter_address' => sanitize_text_field($_GET['filter_address'] ?? ''),
+		'filter_building_type' => sanitize_text_field($_GET['filter_building_type'] ?? ''),
+		'filter_beds' => sanitize_text_field($_GET['filter_beds'] ?? ''),
+		'filter_baths' => sanitize_text_field($_GET['filter_baths'] ?? ''),
+		'listing_status' => sanitize_text_field($_GET['listing_status'] ?? ''),
+		'building_min_area' => sanitize_text_field($_GET['building_min_area'] ?? ''),
+		'building_max_area' => sanitize_text_field($_GET['building_max_area'] ?? ''),
+		'filter_price' => sanitize_text_field($_GET['filter_price'] ?? ''),
+		'sortby' => sanitize_text_field($_GET['sortby'] ?? ''),
+		'paged' => intval($_GET['paged'] ?? 1),
+		'tab' => sanitize_text_field($_GET['tab'] ?? 'all'),
+		'area' => sanitize_text_field($_GET['area'] ?? ''),
+	];
+}
+
+/**
+ * Parse price range from filter_price string
+ */
+function parse_price_range($filter_price)
+{
+	if (empty($filter_price)) {
+		return ['min' => '', 'max' => ''];
+	}
+
+	$filter_price = str_replace('$', '', $filter_price);
+	$price_parts = explode('-', $filter_price);
+
+	return [
+		'min' => trim($price_parts[0] ?? ''),
+		'max' => trim($price_parts[1] ?? '')
+	];
+}
+
+/**
+ * Build WP_Query arguments based on filters and tab
+ */
+function build_property_query_args($filters, $tab, $price_range)
+{
+	$args = [
+		'post_status' => 'publish',
+		'posts_per_page' => 10,
+		'paged' => ($tab === 'all') ? $filters['paged'] : 1,
+	];
+
+	// Set post types based on tab
+	switch ($tab) {
+		case 'sale':
+			$args['post_type'] = 'sale-listing';
+			break;
+		case 'rent':
+			$args['post_type'] = 'rental-listing';
+			break;
+		case 'sold':
+			$args['post_type'] = ['sale-listing', 'rental-listing'];
+			break;
+		default:
+			$args['post_type'] = ['sale-listing', 'rental-listing'];
+	}
+
+	// Add sorting
+	switch ($filters['sortby']) {
+		case 'recent':
+			$args['orderby'] = 'date';
+			$args['order'] = 'DESC';
+			break;
+		case 'price_asc':
+			$args['meta_key'] = 'listing_price';
+			$args['orderby'] = 'meta_value_num';
+			$args['order'] = 'ASC';
+			break;
+		case 'price_desc':
+			$args['meta_key'] = 'listing_price';
+			$args['orderby'] = 'meta_value_num';
+			$args['order'] = 'DESC';
+			break;
+	}
+
+	// Build meta query
+	$meta_query = ['relation' => 'AND'];
+
+	// Handle sold status
+	if ($tab === 'sold') {
+		$meta_query[] = [
+			'key' => 'sold_under_contract',
+			'value' => '1',
+			'compare' => '='
+		];
+	} else {
+		$meta_query[] = [
+			'relation' => 'OR',
+			[
+				'key' => 'sold_under_contract',
+				'value' => '1',
+				'compare' => '!='
+			],
+			[
+				'key' => 'sold_under_contract',
+				'compare' => 'NOT EXISTS'
+			]
+		];
+	}
+
+	// Add other filters
+	if (!empty($filters['filter_beds'])) {
+		if ($filters['filter_beds'] === '5+') {
+			$meta_query[] = [
+				'key' => 'bedrooms',
+				'value' => 5,
+				'compare' => '>',
+				'type' => 'NUMERIC'
+			];
+		} else {
+			$meta_query[] = [
+				'key' => 'bedrooms',
+				'value' => $filters['filter_beds'],
+				'compare' => '=',
+				'type' => 'NUMERIC'
+			];
+		}
+	}
+
+	if (!empty($filters['filter_baths'])) {
+		if ($filters['filter_baths'] === '5+') {
+			$meta_query[] = [
+				'key' => 'bathrooms',
+				'value' => 5,
+				'compare' => '>',
+				'type' => 'NUMERIC'
+			];
+		} else {
+			$meta_query[] = [
+				'key' => 'bathrooms',
+				'value' => $filters['filter_baths'],
+				'compare' => '=',
+				'type' => 'NUMERIC'
+			];
+		}
+	}
+
+	// Price range
+	if (!empty($price_range['min']) && !empty($price_range['max'])) {
+		$meta_query[] = [
+			'key' => 'listing_price',
+			'value' => [$price_range['min'], $price_range['max']],
+			'compare' => 'BETWEEN',
+			'type' => 'NUMERIC'
+		];
+	}
+
+	// Building area
+	if (!empty($filters['building_min_area'])) {
+		$meta_query[] = [
+			'key' => 'building_size',
+			'value' => $filters['building_min_area'],
+			'compare' => '>=',
+			'type' => 'NUMERIC'
+		];
+	}
+
+	if (!empty($filters['building_max_area'])) {
+		$meta_query[] = [
+			'key' => 'building_size',
+			'value' => $filters['building_max_area'],
+			'compare' => '<=',
+			'type' => 'NUMERIC'
+		];
+	}
+
+	if (count($meta_query) > 1) {
+		$args['meta_query'] = $meta_query;
+	}
+
+	// Build tax query
+	$tax_query = [];
+
+	if (!empty($filters['filter_building_type'])) {
+		$tax_query[] = [
+			'taxonomy' => 'building-style',
+			'field' => 'term_id',
+			'terms' => $filters['filter_building_type']
+		];
+	}
+
+	if (!empty($filters['area'])) {
+		$tax_query[] = [
+			'taxonomy' => 'neighbourhood',
+			'field' => 'term_id',
+			'terms' => [$filters['area']]
+		];
+	}
+
+	if (!empty($tax_query)) {
+		$args['tax_query'] = $tax_query;
+	}
+
+	return $args;
+}
+
+/**
+ * Render property tabs navigation
+ */
+function render_property_tabs($tab, $filter_property_type)
+{
+	if (!empty($filter_property_type)) {
+		return;
+	}
+	?>
+	<div class="tab-outer">
+		<ul class="listing-outer">
+			<li class="<?php echo ($tab == 'all') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#all">All</a>
+			</li>
+			<li class="<?php echo ($tab == 'sale') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forsale">For Sale</a>
+			</li>
+			<li class="<?php echo ($tab == 'rent') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forrent">For Rent</a>
+			</li>
+			<li class="<?php echo ($tab == 'sold') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forsold">Sold</a>
+			</li>
+		</ul>
+		<ul class="grid-outer" style="display:none">
+			<li class="<?php echo ($tab == 'all') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#allgrid">All</a>
+			</li>
+			<li class="<?php echo ($tab == 'sale') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forsalegrid">For Sale</a>
+			</li>
+			<li class="<?php echo ($tab == 'rent') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forrentgrid">For Rent</a>
+			</li>
+			<li class="<?php echo ($tab == 'sold') ? 'active' : ''; ?>">
+				<a data-toggle="tab" href="#forsoldgrid">Sold</a>
+			</li>
+		</ul>
+	</div>
+	<?php
+}
+
+/**
+ * Render a single property listing item
+ */
+function render_single_property($property_id)
+{
+	$property_photos = get_field('property_photos', $property_id);
+	$building_size = get_field('building_size', $property_id);
+	$price = get_field('listing_price', $property_id);
+	$per_square = ($price && $building_size) ? $price / $building_size : 0;
+	$project_status = get_field('sold_under_contract', $property_id);
+	$property_post_type = get_post_type($property_id);
+	$agent_id = get_post_meta($property_id, 'agent', true);
+	$user_info = get_userdata($agent_id);
+	$state = get_field('state', $property_id);
+	?>
+	<div class="property-listing">
+		<div class="listing-thumb">
+			<?php
+			$thumbnail = get_the_post_thumbnail_url($property_id, 'list-thumb');
+			if (!empty($thumbnail)) {
+				echo '<img src="' . $thumbnail . '" alt="thumbnail">';
+			} elseif ($property_photos && !empty($property_photos[0]['photo']['url'])) {
+				echo '<img src="' . $property_photos[0]['photo']['url'] . '" alt="thumbnail">';
+			} else {
+				echo '<img src="' . get_template_directory_uri() . '/images/thumbnail-255-170.jpg" alt="thumbnail">';
+			}
+
+			if ($project_status == 1 || $project_status == 2) { ?>
+				<div class="transparent-strip">
+					<?php echo ($project_status == 1) ? 'Sold' : 'In Contract'; ?>
+				</div>
+			<?php } ?>
+		</div>
+		<div class="listing-content">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<?php
+					if ($property_post_type == 'sale-listing' && $project_status != 1) { ?>
+						<div class="for-sale"><span>For Sale</span></div>
+					<?php } elseif ($project_status == 1) { ?>
+						<div class="for-sale"><span>Sold</span></div>
+					<?php } else { ?>
+						<div class="for-sale"><span>For Rent</span></div>
+					<?php } ?>
+
+					<div class="prperty-n">
+						<?php echo get_the_title($property_id); ?>
+						<span>
+							<?php echo wp_trim_words(get_field('city', $property_id), 15, ' […]'); ?>,
+							<?php echo wp_trim_words(get_field('zip_code', $property_id), 15, ' […]'); ?>
+						</span>
+					</div>
+
+					<div class="prperty-des">
+						<span>Beds: <?php echo get_field('bedrooms', $property_id); ?></span>
+						<span>Baths: <?php echo get_field('bathrooms', $property_id); ?></span>
+						<span>Sq Ft. <?php echo !empty($building_size) ? number_format($building_size) : ''; ?></span>
+					</div>
+
+					<?php if ($state) { ?>
+						<div class="prperty-des">
+							<span><?php echo $state->name; ?></span>
+						</div>
+					<?php } ?>
+
+					<div class="prperty-des prperty-des2">
+						<span><i class="fa fa-user" aria-hidden="true"></i>
+							<?php echo $user_info->user_firstname ?? ''; ?> 	<?php echo $user_info->user_lastname ?? ''; ?>
+						</span>
+						<span><i class="fa fa-calendar" aria-hidden="true"></i>
+							<?php echo get_the_time('', $property_id); ?>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="prperty-price">
+						$<?php echo !empty($price) && is_numeric($price) ? number_format($price) : '0'; ?>
+						<span><?php echo get_square_feet($per_square); ?></span>
+					</div>
+
+					<?php if ($property_post_type == 'sale-listing') {
+						render_open_house_info($property_id);
+					} ?>
+
+					<div class="detail-btn">
+						<a href="<?php echo get_permalink($property_id); ?>">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php
+}
+
+/**
+ * Render open house information for sale listings
+ */
+function render_open_house_info($property_id)
+{
+	$open_house_true = get_post_meta($property_id, 'open_house', true);
+	$open_house_start_date = get_post_meta($property_id, 'open_house_start_date', true);
+	$open_house_end_date = get_post_meta($property_id, 'end_date', true);
+	$day = get_field('day', $property_id);
+	$todayDate = date('Y/m/d');
+	$checkLastDate = date('Y/m/d', strtotime($open_house_end_date));
+
+	if ($open_house_true == 1 && ($todayDate < $checkLastDate || $checkLastDate == $todayDate)) {
+		$start_month = date('M', strtotime($open_house_start_date));
+		$start_date = date('dS', strtotime($open_house_start_date));
+		$start_time = ltrim(date('h:ia', strtotime(get_post_meta($property_id, 'start_time', true))), 0);
+		$end_time = ltrim(date('h:ia', strtotime(get_post_meta($property_id, 'end_time', true))), 0);
+		?>
+		<div class="custom-listing-open-house">
+			<div class="inner-listing-open-house">
+				<h4>Open House:
+					<?php echo $day . ', ' . $start_month . ' ' . $start_date . ', ' . $start_time . ' - ' . $end_time; ?></h4>
+			</div>
+		</div>
+		<?php
+	}
+}
+
+/**
+ * Render properties for a specific tab
+ */
+function render_properties_for_tab($tab, $filters, $price_range)
+{
+	$args = build_property_query_args($filters, $tab, $price_range);
+
+	// Debug logging
+	error_log("Property Query for tab '$tab': " . print_r($args, true));
+
+	$query = new WP_Query($args);
+
+	error_log("Query Results for tab '$tab': Found {$query->found_posts} posts");
+
+	if ($query->have_posts()) {
+		while ($query->have_posts()) {
+			$query->the_post();
+			render_single_property(get_the_ID());
+		}
+
+		// Pagination
+		if (function_exists('pagination')) {
+			if ($tab === 'all') {
+				pagination('all', $filters['paged'], $query->max_num_pages);
+			} else {
+				pagination('all', 1, $query->max_num_pages);
+			}
+		}
+	} else {
+		// Debug: Try a simpler query to see if any properties exist
+		$debug_query = new WP_Query([
+			'post_type' => ['sale-listing', 'rental-listing'],
+			'post_status' => 'publish',
+			'posts_per_page' => 5,
+		]);
+
+		error_log("Debug Query Results: Found {$debug_query->found_posts} total properties");
+
+		if ($debug_query->have_posts()) {
+			echo '<div class="property-listing"><h3 class="no_property">No properties match your current filters, but ' . $debug_query->found_posts . ' properties exist in the database. Try adjusting your filters.</h3></div>';
+		} else {
+			echo '<div class="property-listing"><h3 class="no_property">No properties found in the database. Please check if properties are properly created.</h3></div>';
+		}
+		wp_reset_postdata();
+	}
+
+	wp_reset_postdata();
+}
+
+/**
+ * NEW CLEAN MAIN FUNCTION - Replaces the massive 1,893-line filter_properties function
+ */
+function filter_properties()
+{
+	// Parse and sanitize all inputs
+	$filters = parse_property_filters();
+	$price_range = parse_price_range($filters['filter_price']);
+
+	// Start output
+	?>
+	<div class="sorting">
+		<?php render_property_tabs($filters['tab'], $filters['filter_property_type']); ?>
+	</div>
+
+	<?php if (empty($filters['filter_property_type'])) { ?>
+		<div class="listing-outer">
+			<div class="tab-content">
+				<!-- All Properties Tab -->
+				<div id="all" class="listing-tab-content tab-pane <?php echo ($filters['tab'] == 'all') ? 'in active' : ''; ?>">
+					<?php render_properties_for_tab('all', $filters, $price_range); ?>
+				</div>
+
+				<!-- For Sale Tab -->
+				<div id="forsale"
+					class="listing-tab-content tab-pane fade <?php echo ($filters['tab'] == 'sale') ? 'in active' : ''; ?>">
+					<?php render_properties_for_tab('sale', $filters, $price_range); ?>
+				</div>
+
+				<!-- For Rent Tab -->
+				<div id="forrent"
+					class="listing-tab-content tab-pane fade <?php echo ($filters['tab'] == 'rent') ? 'in active' : ''; ?>">
+					<?php render_properties_for_tab('rent', $filters, $price_range); ?>
+				</div>
+
+				<!-- Sold Tab -->
+				<div id="forsold"
+					class="listing-tab-content tab-pane fade <?php echo ($filters['tab'] == 'sold') ? 'in active' : ''; ?>">
+					<?php render_properties_for_tab('sold', $filters, $price_range); ?>
+				</div>
+			</div>
+		</div>
+	<?php } else {
+		// Handle filtered property type view
+		render_properties_for_tab($filters['filter_property_type'], $filters, $price_range);
+	} ?>
+
+	<style>
+		.property_listing {
+			margin: 0 !important;
+		}
+	</style>
+	<?php
+	exit();
+}
+
+/**
+ * Optimized Property Query Builder
+ * Builds a single, efficient WP_Query for all property filtering scenarios
+ */
+function build_optimized_property_query($filters)
+{
+	$args = array(
+		'post_status' => 'publish',
+		'posts_per_page' => 10,
+		'update_post_meta_cache' => true,
+		'update_post_term_cache' => true
+	);
+
+	// Handle pagination
+	if (!empty($filters['paged'])) {
+		$args['paged'] = $filters['paged'];
+	}
+
+	// Handle sorting
+	if ($filters['sortby'] == "recent") {
+		$args['orderby'] = 'date';
+		$args['order'] = 'DESC';
+	} elseif ($filters['sortby'] == "price_asc") {
+		$args['meta_key'] = 'listing_price';
+		$args['orderby'] = 'meta_value_num';
+		$args['order'] = 'ASC';
+	} elseif ($filters['sortby'] == "price_desc") {
+		$args['meta_key'] = 'listing_price';
+		$args['orderby'] = 'meta_value_num';
+		$args['order'] = 'DESC';
+	}
+
+	// Handle post types based on property type filter
+	if ($filters['filter_property_type'] == "buy" || $filters['filter_property_type'] == "sale") {
+		$args['post_type'] = 'sale-listing';
+	} elseif ($filters['filter_property_type'] == "rent") {
+		$args['post_type'] = 'rental-listing';
+	} else {
+		$args['post_type'] = array('sale-listing', 'rental-listing');
+	}
+
+	// Build optimized meta query
+	$meta_query = array('relation' => 'AND');
+
+	// Handle sold/available status
+	if ($filters['filter_property_type'] == "sold") {
+		$meta_query[] = array(
+			'key' => 'sold_under_contract',
+			'value' => '1',
+			'compare' => '='
+		);
+	} elseif ($filters['filter_property_type'] != "sold") {
+		$meta_query[] = array(
+			'relation' => 'OR',
+			array(
+				'key' => 'sold_under_contract',
+				'value' => '1',
+				'compare' => '!='
+			),
+			array(
+				'key' => 'sold_under_contract',
+				'compare' => 'NOT EXISTS'
+			)
+		);
+	}
+
+	// Handle listing end date (only for non-sold properties)
+	if ($filters['filter_property_type'] != "sold") {
+		$meta_query[] = array(
+			'relation' => 'OR',
+			array(
+				'key' => 'listing_end',
+				'value' => date('Y-m-d'),
+				'compare' => '>=',
+				'type' => 'DATE'
+			),
+			array(
+				'key' => 'listing_end',
+				'compare' => 'NOT EXISTS'
+			)
+		);
+	}
+
+	// Handle address filter
+	if (!empty($filters['filter_address'])) {
+		$post_exit = get_post($filters['filter_address']);
+		if (empty($post_exit)) {
+			$address_query = array(
+				'relation' => 'OR',
+				array(
+					'key' => 'address',
+					'value' => $filters['filter_address'],
+					'compare' => 'LIKE'
+				),
+				array(
+					'key' => 'city',
+					'value' => $filters['filter_address'],
+					'compare' => 'LIKE'
+				),
+				array(
+					'key' => 'zip_code',
+					'value' => $filters['filter_address'],
+					'compare' => 'LIKE'
+				)
+			);
+
+			// Check for state matches
+			$termargs = array(
+				'taxonomy' => 'state',
+				'fields' => 'ids',
+				'hide_empty' => false,
+				'name__like' => $filters['filter_address']
+			);
+			$state_terms = get_terms($termargs);
+			if (!empty($state_terms)) {
+				$address_query[] = array(
+					'key' => 'state',
+					'value' => $state_terms,
+					'compare' => 'IN',
+					'type' => 'NUMERIC'
+				);
+			}
+
+			$meta_query[] = $address_query;
+		} else {
+			$args['post__in'] = array($filters['filter_address']);
+		}
+	}
+
+	// Handle bedrooms filter
+	if (!empty($filters['filter_beds'])) {
+		if ($filters['filter_beds'] != "5+") {
+			$meta_query[] = array(
+				'key' => 'bedrooms',
+				'value' => $filters['filter_beds'],
+				'compare' => '=',
+				'type' => 'NUMERIC'
+			);
+		} else {
+			$meta_query[] = array(
+				'key' => 'bedrooms',
+				'value' => 5,
+				'compare' => '>',
+				'type' => 'NUMERIC'
+			);
+		}
+	}
+
+	// Handle bathrooms filter
+	if (!empty($filters['filter_baths'])) {
+		if ($filters['filter_baths'] != "5+") {
+			$meta_query[] = array(
+				'key' => 'bathrooms',
+				'value' => $filters['filter_baths'],
+				'compare' => '=',
+				'type' => 'NUMERIC'
+			);
+		} else {
+			$meta_query[] = array(
+				'key' => 'bathrooms',
+				'value' => 5,
+				'compare' => '>',
+				'type' => 'NUMERIC'
+			);
+		}
+	}
+
+	// Handle area filters
+	if (!empty($filters['building_min_area'])) {
+		$meta_query[] = array(
+			'key' => 'building_size',
+			'value' => $filters['building_min_area'],
+			'compare' => '>=',
+			'type' => 'NUMERIC'
+		);
+	}
+
+	if (!empty($filters['building_max_area'])) {
+		$meta_query[] = array(
+			'key' => 'building_size',
+			'value' => $filters['building_max_area'],
+			'compare' => '<=',
+			'type' => 'NUMERIC'
+		);
+	}
+
+	// Handle price range filter
+	if (!empty($filters['slidemin']) && !empty($filters['slidemax'])) {
+		$meta_query[] = array(
+			'key' => 'listing_price',
+			'value' => array($filters['slidemin'], $filters['slidemax']),
+			'compare' => 'BETWEEN',
+			'type' => 'NUMERIC'
+		);
+	}
+
+	// Handle listing status filter
+	if (!empty($filters['listing_status'])) {
+		$meta_query[] = array(
+			'key' => 'listing_status',
+			'value' => $filters['listing_status'],
+			'compare' => '='
+		);
+	}
+
+	$args['meta_query'] = $meta_query;
+
+	// Handle taxonomy queries
+	$tax_query = array();
+
+	if (!empty($filters['filter_building_type'])) {
+		$tax_query[] = array(
+			'taxonomy' => 'building-style',
+			'field' => 'term_id',
+			'terms' => $filters['filter_building_type']
+		);
+	}
+
+	if (!empty($filters['area'])) {
+		$tax_query[] = array(
+			'taxonomy' => 'neighbourhood',
+			'field' => 'term_id',
+			'terms' => array($filters['area'])
+		);
+	}
+
+	if (!empty($tax_query)) {
+		$args['tax_query'] = $tax_query;
+	}
+
+	return $args;
+}
+
+/**
+ * Prefetch Property Data
+ * Eliminates N+1 queries by prefetching all related data
+ */
+function prefetch_property_data($properties)
+{
+	if (empty($properties))
+		return array();
+
+	$property_IDs = wp_list_pluck($properties, 'ID');
+	$agent_ids = array();
+
+	// Prefetch all meta data
+	update_meta_cache('post', $property_IDs);
+
+	// Collect agent IDs for batch user query
+	foreach ($properties as $property) {
+		$agent_id = get_post_meta($property->ID, 'agent', true);
+		if ($agent_id) {
+			$agent_ids[] = $agent_id;
+		}
+	}
+
+	// Prefetch user data
+	$users_data = array();
+	if (!empty($agent_ids)) {
+		$unique_agent_ids = array_unique($agent_ids);
+		foreach ($unique_agent_ids as $agent_id) {
+			$users_data[$agent_id] = get_userdata($agent_id);
+		}
+	}
+
+	return $users_data;
+}
+
+/**
+ * Render Property Listing
+ * Single template for rendering properties in both list and grid views
+ */
+function render_property_listing($properties, $users_data, $view_type = 'list')
+{
+	if (empty($properties)) {
+		echo '<div class="property-listing"><h3 class="no_property">No Property Found</h3></div>';
+		return;
+	}
+
+	foreach ($properties as $property) {
+		setup_postdata($property);
+		global $post;
+		$post = $property;
+
+		$property_photos = get_field('property_photos', $property->ID);
+		$agent_id = get_post_meta($property->ID, 'agent', true);
+		$user_info = isset($users_data[$agent_id]) ? $users_data[$agent_id] : null;
+		$building_size = get_field("building_size", $property->ID);
+		$price = get_field("listing_price", $property->ID);
+		$per_square = ($price && $building_size) ? $price / $building_size : 0;
+		$project_status = get_field('sold_under_contract', $property->ID);
+		$property_post_type = get_post_type($property->ID);
+		$state = get_field("state", $property->ID);
+
+		if ($view_type == 'grid') {
+			render_property_grid_item($property, $property_photos, $user_info, $building_size, $price, $per_square, $project_status, $property_post_type, $state);
+		} else {
+			render_property_list_item($property, $property_photos, $user_info, $building_size, $price, $per_square, $project_status, $property_post_type, $state);
+		}
+	}
+
+	wp_reset_postdata();
+}
+
+/**
+ * Render Property List Item
+ */
+function render_property_list_item($property, $property_photos, $user_info, $building_size, $price, $per_square, $project_status, $property_post_type, $state)
+{
+	// Ensure $property is properly assigned for linter
+	$property_id = $property->ID;
+	?>
+	<div class="property-listing">
+		<div class="listing-thumb">
+			<?php
+			$thumbnail = get_the_post_thumbnail_url($property->ID, 'list-thumb');
+			if (!empty($thumbnail)):
+				echo '<img src="' . $thumbnail . '" alt="thumbnail">';
+			elseif ($property_photos && $property_photos[0]['photo']['url']):
+				echo '<img src="' . $property_photos[0]['photo']['url'] . '" alt="thumbnail">';
+			else:
+				echo '<img src="' . get_template_directory_uri() . '/images/thumbnail-255-170.jpg" alt="thumbnail">';
+			endif;
+
+			if ($project_status == 1 || $project_status == 2) { ?>
+				<div class="transparent-strip">
+					<?php
+					if ($project_status == 1):
+						echo "Sold";
+					elseif ($project_status == 2):
+						echo "In Contract";
+					endif;
+					?>
+				</div>
+			<?php } ?>
+		</div>
+		<div class="listing-content">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<?php if ($property_post_type == 'sale-listing' and $project_status != 1) { ?>
+						<div class="for-sale"><span>For Sale</span></div>
+					<?php } else if ($project_status == 1) { ?>
+							<div class="for-sale"><span>Sold</span></div>
+					<?php } else { ?>
+							<div class="for-sale"><span>For Rent</span></div>
+					<?php } ?>
+
+					<div class="prperty-n">
+						<?php echo get_the_title($property->ID); ?>
+						<span>
+							<?php echo wp_trim_words(get_field('city', $property->ID), 15, ' […]'); ?>,<?php echo wp_trim_words(get_field('zip_code', $property->ID), 15, ' […]'); ?>
+						</span>
+					</div>
+
+					<div class="prperty-des">
+						<span>Beds: <?php echo get_field("bedrooms", $property->ID); ?></span>
+						<span>Baths: <?php echo get_field("bathrooms", $property->ID); ?></span>
+						<span>Sq Ft. <?php echo (!empty($building_size)) ? number_format($building_size) : ''; ?></span>
+					</div>
+
+					<?php if ($state && is_object($state)) { ?>
+						<div class="prperty-des">
+							<span><?php echo $state->name; ?></span>
+						</div>
+					<?php } ?>
+
+					<?php if ($user_info) { ?>
+						<div class="prperty-des prperty-des2">
+							<span><i class="fa fa-user" aria-hidden="true"></i>
+								<?php echo $user_info->user_firstname . ' ' . $user_info->user_lastname; ?>
+							</span>
+							<span><i class="fa fa-calendar" aria-hidden="true"></i>
+								<?php echo get_the_time('', $property->ID); ?>
+							</span>
+						</div>
+					<?php } ?>
+				</div>
+
+				<div class="col-sm-6 col-xs-12">
+					<div class="prperty-price">
+						$<?php echo !empty($price) && is_numeric($price) ? number_format($price) : '0'; ?>
+						<span><?php echo get_square_feet($per_square); ?></span>
+					</div>
+
+					<?php
+					if ($property_post_type == 'sale-listing') {
+						$open_house_true = get_post_meta($property->ID, 'open_house', true);
+						$open_house_start_date = get_post_meta($property->ID, 'open_house_start_date', true);
+						$open_house_end_date = get_post_meta($property->ID, 'end_date', true);
+						$open_house_start_time = get_post_meta($property->ID, 'start_time', true);
+						$open_house_end_time = get_post_meta($property->ID, 'end_time', true);
+						$day = get_field('day', $property->ID);
+						$todayDate = date('Y/m/d');
+						$checkLastDate = date('Y/m/d', strtotime($open_house_end_date));
+
+						if ($open_house_true == 1 && ($todayDate < $checkLastDate || $checkLastDate == $todayDate)):
+							$start_month = date('M', strtotime($open_house_start_date));
+							$start_date = date('dS', strtotime($open_house_start_date));
+							$start_time = ltrim(date('h:ia', strtotime($open_house_start_time)), 0);
+							$end_time = ltrim(date('h:ia', strtotime($open_house_end_time)), 0); ?>
+							<div class="custom-listing-open-house">
+								<div class="inner-listing-open-house">
+									<h4>Open House:
+										<?php echo $day . ', ' . $start_month . ' ' . $start_date . ', '; ?>
+										<?php echo $start_time . ' - ' . $end_time; ?>
+									</h4>
+								</div>
+							</div>
+						<?php endif;
+					} ?>
+
+					<div class="detail-btn">
+						<a href="<?php echo get_permalink($property->ID); ?>">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php
+}
+
+/**
+/**
+ * Render Property Grid Item
+ */
+function render_property_grid_item($property, $property_photos, $user_info, $building_size, $price, $per_square, $project_status, $property_post_type, $state)
+{
+	?>
+	<li>
+		<div class="listing-thumb">
+			<?php
+			$thumbnail = get_the_post_thumbnail_url($property->ID, 'list-thumb');
+			if (!empty($thumbnail)):
+				echo '<img src="' . $thumbnail . '" alt="thumbnail">';
+			elseif ($property_photos && $property_photos[0]['photo']['url']):
+				echo '<img src="' . $property_photos[0]['photo']['url'] . '" alt="thumbnail">';
+			else:
+				echo '<img src="' . get_template_directory_uri() . '/images/thumbnail-255-170.jpg" alt="thumbnail">';
+			endif;
+
+			if ($project_status == 1 || $project_status == 2) { ?>
+				<div class="transparent-strip">
+					<?php
+					if ($project_status == 1):
+						echo "Sold";
+					elseif ($project_status == 2):
+						echo "In Contract";
+					endif;
+					?>
+				</div>
+			<?php } ?>
+		</div>
+
+		<div class="listing-content">
+			<?php if ($property_post_type == 'sale-listing' and $project_status != 1) { ?>
+				<div class="for-sale"><span>For Sale</span></div>
+			<?php } else if ($project_status == 1) { ?>
+					<div class="for-sale"><span>Sold</span></div>
+			<?php } else { ?>
+					<div class="for-sale"><span>For Rent</span></div>
+			<?php } ?>
+
+			<div class="prperty-n">
+				<a href="<?php echo get_permalink($property->ID); ?>">
+					<?php echo get_the_title($property->ID); ?>
+				</a>
+				<span>
+					<?php echo wp_trim_words(get_field('city', $property->ID), 15, ' […]'); ?>,<?php echo wp_trim_words(get_field('zip_code', $property->ID), 15, ' […]'); ?>
+				</span>
+			</div>
+
+			<div class="prperty-price">
+				$<?php echo !empty($price) && is_numeric($price) ? number_format($price) : '0'; ?>
+				<span><?php echo get_square_feet($per_square); ?></span>
+			</div>
+
+			<div class="prperty-des">
+				<span>Beds: <?php echo get_field("bedrooms", $property->ID); ?></span>
+				<span>Baths: <?php echo get_field("bathrooms", $property->ID); ?></span>
+				<span>Sq Ft. <?php echo (!empty($building_size)) ? number_format($building_size) : ''; ?></span>
+			</div>
+
+			<?php if ($state && is_object($state)) { ?>
+				<div class="prperty-des">
+					<span><?php echo $state->name; ?></span>
+				</div>
+			<?php } ?>
+
+			<?php if ($user_info) { ?>
+				<div class="prperty-des2">
+					<span><i class="fa fa-user" aria-hidden="true"></i>
+						<?php echo $user_info->user_firstname . ' ' . $user_info->user_lastname; ?>
+					</span>
+					<span class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>
+						<?php echo get_the_time('', $property->ID); ?>
+					</span>
+				</div>
+			<?php } ?>
+		</div>
+	</li>
+	<?php
+}
+
+
+
+
+function pagination($tab, $paged, $pages = '', $range = 4)
+{
+
+	$showitems = ($range * 2) + 1;
+
+	if (empty($paged))
+		$paged = 1;
+
+	if ($pages == '') {
+
+		global $wp_query;
+
+		$pages = $wp_query->max_num_pages;
+
+		if (!$pages) {
+
+			$pages = 1;
+
+		}
+
+	}
+
+
+
+	if (1 != $pages) {
+
+		echo "<div class=\"pagination\"><span>Page " . $paged . " of " . $pages . "</span>";
+
+		if ($paged > 2 && $paged > $range + 1 && $showitems < $pages)
+			echo "<a href='" . get_pagenum_link(1) . "' data-paged='1' data-tab='" . $tab . "' class='inactive'>&laquo; First</a>";
+
+		if ($paged > 1 && $showitems < $pages)
+			echo "<a href='" . get_pagenum_link($paged - 1) . "' data-paged='" . ($paged - 1) . "' data-tab='" . $tab . "' class='inactive'>&lsaquo; Previous</a>";
+
+		for ($i = 1; $i <= $pages; $i++) {
+
+			if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
+
+				echo ($paged == $i) ? "<span class=\"current\">" . $i . "</span>" : "<a href='" . get_pagenum_link($i) . "' class=\"inactive\" data-paged='" . $i . "' data-tab='" . $tab . "'>" . $i . "</a>";
+
+			}
+
+		}
+
+
+
+		if ($paged < $pages && $showitems < $pages)
+
+			echo "<a href=\"" . get_pagenum_link($paged + 1) . "\" data-paged='" . ($paged + 1) . "' data-tab='" . $tab . "' class='inactive'>Next &rsaquo;</a>";
+
+		if ($paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages)
+			echo "<a href='" . get_pagenum_link($pages) . "' data-paged='" . $pages . "' data-tab='" . $tab . "' class='inactive'>Last &raquo;</a>";
+
+		echo "</div>\n";
+
+	}
+
+}
+
+
+
+add_action('wp_ajax_pagination', 'pagination');
+
+
+
+// Add a custom agent role
+
+
+
+$result = add_role('agent', __('Agent'), array());
+
+add_action('after_setup_theme', 'remove_admin_bar');
+
+
+
+function remove_admin_bar()
+{
+
+	if (!current_user_can('administrator') && !is_admin()) {
+
+		show_admin_bar(false);
+
+	}
+
+}
+
+
+
+function request_property_info()
+{
+
+	$name = $_POST['name'];
+
+	$email = $_POST['email'];
+
+	$phone = $_POST['phone'];
+
+	$message = $_POST['message'];
+
+	$agent = $_POST['agent'];
+
+	$property = $_POST['property'];
+
+	$author_info = get_userdata($agent);
+
+	if (!empty($property)) {
+
+		$heading = 'Following user wants to contact you regarding ' . $property . ' property, user details given below:';
+
+	} else {
+
+		$heading = 'Following user wants to contact you, user details given below:';
+
+	}
+
+
+
+	$body = '<table border="0" cellpadding="0" cellspacing="0" style="width:650px">
+
+				<tbody>
+
+					<tr>
+
+						<td scope="col">
+
+						<table border="0" cellpadding="10" cellspacing="0" style="border-bottom:1px solid #cccccc; height:80px; width:650px">
+
+							<tbody>
+
+								<tr>
+
+									<td scope="col"><a href="' . get_site_url() . '" target="_blank"><img alt="" src="' . get_field('email_logo', 'option') . '" style="height:200px; width:200px" /></a></td>
+
+								</tr>
+
+							</tbody>
+
+						</table>
+
+			
+
+						<table border="0" cellpadding="10" cellspacing="0" style="width:650px">
+
+							<tbody>
+
+								<tr>
+
+									<td scope="col">
+
+									<table border="0" cellpadding="10" cellspacing="0" style="width:610px">
+
+										<tbody>
+
+											<tr>
+
+												<td scope="col"><strong>Hi ' . $author_info->first_name . ' ' . $author_info->last_name . ',</strong></td>
+
+											</tr>
+
+											<tr>
+
+												<td scope="col"><span style="font-size:14px">' . $heading . '</span></td>
+
+											</tr>
+
+											<tr>
+
+												<td scope="col"><span style="font-size:14px">Name : ' . $name . '</span><br />												
+
+												<span style="font-size:14px">Email : ' . $email . '</span><br />
+
+												<span style="font-size:14px">Phone : ' . $phone . '</span><br />
+
+												<span style="font-size:14px">Message : ' . $message . '</span></td>
+
+											</tr>
+
+											<tr>
+
+												<td scope="col">Thanks</td>
+
+											</tr>
+
+											<tr>
+
+												<td scope="col"><strong>' . get_bloginfo() . '<br />
+
+												<a href="' . get_site_url() . '">' . get_site_url() . '</a></strong></td>
+
+											</tr>
+
+										</tbody>
+
+									</table>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+						</table>
+
+			
+
+						<table align="center" border="0" cellpadding="10" cellspacing="0" style="width:650px">
+
+							<tbody>
+
+								<tr>
+
+									<td scope="col"><em>Please do not reply to this email as this is an automated respodSe from ' . get_bloginfo() . '.</em></td>
+
+								</tr>
+
+							</tbody>
+
+						</table>
+
+						</td>
+
+					</tr>
+
+				</tbody>
+
+			</table>';
+
+	$to = $author_info->user_email;
+
+	$subject = 'Property Request Info';
+
+	$headers = array(
+
+		'Content-Type: text/html; charset=UTF-8',
+
+		'From: WOLF PROPERTIES <admin@wolfprop.com>'
+
+	);
+
+	if (wp_mail($to, $subject, $body, $headers)) {
+
+		$respodSe['success'] = true;
+
+		$respodSe['message'] = "Thank you for your message. It has been sent.";
+
+	} else {
+
+		$respodSe['success'] = false;
+
+		$respodSe['message'] = "There was an error trying to send your message. Please try again later.";
+
+	}
+
+
+
+	echo json_encode($respodSe);
+
+	die;
+
+}
+
+
+
+add_action('wp_ajax_request_property_info', 'request_property_info');
+
+add_theme_support('post-thumbnails');
+
+add_image_size('detail-thumb', 1156, 581, true);
+
+add_image_size('slide-thumb', 1024, 683, true);
+
+add_image_size('home-thumb', 1350, 650, true);
+
+add_image_size('list-thumb', 255, 170, true);
+
+add_image_size('grid-thumb', 385, 260, true);
+
+add_image_size('blog-thumb', 90, 90, true);
+
+
+
+// add 30 + plus listing end date for rental and sale property
+
+
+
+add_action('save_post_sale-listing', 'save_my_metadata');
+
+
+
+function save_my_metadata($ID = false, $post = false)
+{
+
+	$listing_end_status = get_post_meta($ID, 'listing_end_status', true);
+
+	if ($listing_end_status != "update") {
+
+		if (!empty($_POST['fields']['field_58204cf6e5605']))
+			$listing_date = $_POST['fields']['field_58204cf6e5605'];
+		else
+			$listing_date = $_POST['fields']['listing_date'];
+
+		date("Y-m-d", $listing_date);
+
+		$days = 30;
+
+		$listing_end = strtotime("+" . $days . " days", strtotime($listing_date));
+
+		$listing_end = date("Y-m-d", $listing_end);
+
+		update_post_meta($ID, 'listing_end', $listing_end);
+
+		update_post_meta($ID, 'listing_end_status', 'update');
+
+	}
+
+
+
+	if (!empty($_POST['fields']['field_58204d2ae5607']))
+		$listing_status = $_POST['fields']['field_58204d2ae5607'];
+	else
+		$listing_status = $_POST['fields']['listing_status'];
+
+	$last_status = get_post_meta($ID, 'listing_status', true);
+
+	if ($last_status != "Sold" && $listing_status == "Sold") {
+
+		update_post_meta($ID, 'listing_rentedsold_date', date("Y-m-d"));
+
+	}
+
+}
+
+
+
+add_action('save_post_rental-listing', 'save_my_metadata1');
+
+
+
+function save_my_metadata1($ID = false, $post = false)
+{
+
+	$listing_end_status = get_post_meta($ID, 'listing_end_status', true);
+
+	if ($listing_end_status != "update") {
+
+		if (!empty($_POST['fields']['field_58204cf6e5605']))
+			$listing_date = $_POST['fields']['field_58204cf6e5605'];
+		else
+			$listing_date = $_POST['fields']['listing_date'];
+
+		date("Y-m-d", $listing_date);
+
+		$days = 30;
+
+		$listing_end = strtotime("+" . $days . " days", strtotime($listing_date));
+
+		$listing_end = date("Y-m-d", $listing_end);
+
+		update_post_meta($ID, 'listing_end', $listing_end);
+
+		update_post_meta($ID, 'listing_end_status', 'update');
+
+	}
+
+
+
+	if (!empty($_POST['fields']['field_58204d2ae5607']))
+		$listing_status = $_POST['fields']['field_58204d2ae5607'];
+	else
+		$listing_status = $_POST['fields']['listing_status'];
+
+	$last_status = get_post_meta($ID, 'listing_status', true);
+
+	if ($last_status != "Rented" && $listing_status == "Rented") {
+
+		update_post_meta($ID, 'listing_rentedsold_date', date("Y-m-d"));
+
+	}
+
+}
+
+
+
+// thumbnail image upload
+
+
+
+add_action('wp_ajax_upload_images', 'upload_images_callback');
+
+add_action('wp_ajax_nopriv_upload_images', 'upload_images_callback');
+
+
+
+if (!function_exists('upload_images_callback')):
+
+	function upload_images_callback()
+	{
+
+		$data = array();
+
+		$attachment_ids = array();
+
+		if (isset($_POST['nonce']) && wp_verify_nonce($_POST['nonce'], 'image_upload')) {
+
+			$files = reArrayFiles($_FILES['files']);
+
+
+			$maxFile = array_reduce($files, function ($carry, $item) {
+				return ($carry === null || $item['size'] > $carry['size']) ? $item : $carry;
+			});
+
+
+			$data['size'] = $maxFile['size'];
+			$data['status'] = false;
+			$data['message'] = __('Image is too large. It must be less than 2M!', 'twentysixteen');
+
+			$isValidFile = true;
+			$allowedMimeTypes = ['image/jpeg', 'image/jpg', 'image/png',];
+
+			foreach ($files as $file) {
+				if (!in_array($file['type'], $allowedMimeTypes)) {
+					$isValidFile = false;
+					break;
+				}
+			}
+
+
+			if (empty($_FILES['files'])) {
+				$data['status'] = false;
+				$data['message'] = __('Please select an image to upload!', 'twentysixteen');
+			} else {
+				if (!$isValidFile) {
+					$data['status'] = false;
+					$data['message'] = __('Please select valid images', 'twentysixteen');
+				} elseif ($maxFile['size'] > 5242880) { // Maximum image size is 5M
+
+					$data['size'] = $files[0]['size'];
+
+					$data['status'] = false;
+
+					$data['message'] = __('Image is too large. It must be less than 2M!', 'twentysixteen');
+
+				} else {
+
+					$i = $_POST['count'];
+
+					$data['message'] = '';
+
+					foreach ($files as $file) {
+
+						if (is_array($file)) {
+
+							$attachment_id = upload_user_file($file, false);
+
+							if (is_numeric($attachment_id)) {
+
+								$img_thumb = wp_get_attachment_image_src($attachment_id, 'thumbnail');
+
+								$data['status'] = true;
+
+								$data['message'] .= '<li id="attachment-' . $i . '">
+										<div class="attachment"><input type="hidden" name="fields[property_images][]" value="' . $attachment_id . '">
+	
+										
+	
+										<img src="' . $img_thumb[0] . '" alt="" /></div>
+	
+										<div class="attachment"><input type="radio" name="feature_image" value="' . $attachment_id . '"></div>
+	
+										<div class="attachment"><a href="javascript:void(0)" class="btn-default btn-default-blue remove_attach" data-attachment="' . $i . '">Remove</a></div>
+	
+										<input type="hidden" name="fields[property_photos]" value="' . ++$i . '">	
+	
+							</li>';
+
+								$attachment_ids[] = $attachment_id;
+
+							}
+
+						}
+
+					}
+
+
+
+					if (!$attachment_ids) {
+
+						$data['status'] = false;
+
+						$data['message'] = __('An error has occured. Your image was not added.', 'twentysixteen');
+
+					}
+
+				}
+			}
+
+
+		} else {
+
+			$data['status'] = false;
+
+			$data['message'] = __('Nonce verify failed', 'twentysixteen');
+
+		}
+
+
+
+		echo json_encode($data);
+
+		die();
+
+	}
+
+
+
+endif;
+
+/**
+
+ * Rearray $_FILES array for easy use
+
+ *
+
+ */
+
+
+
+if (!function_exists('reArrayFiles')):
+
+	function reArrayFiles(&$file_post)
+	{
+
+		$file_ary = array();
+
+		$file_count = count($file_post['name']);
+
+		$file_keys = array_keys($file_post);
+
+		for ($i = 0; $i < $file_count; $i++) {
+
+			foreach ($file_keys as $key) {
+
+				$file_ary[$i][$key] = $file_post[$key][$i];
+
+			}
+
+		}
+
+
+
+		return $file_ary;
+
+	}
+
+
+
+endif;
+
+
+
+if (!function_exists('upload_user_file')):
+
+	function upload_user_file($file = array(), $title = false)
+	{
+
+		require_once ABSPATH . 'wp-admin/includes/admin.php';
+
+
+
+		$file_return = wp_handle_upload($file, array(
+
+			'test_form' => false
+
+		));
+
+		if (isset($file_return['error']) || isset($file_return['upload_error_handler'])) {
+
+			return false;
+
+		} else {
+
+			$filename = $file_return['file'];
+
+			$attachment = array(
+
+				'post_mime_type' => $file_return['type'],
+
+				'post_content' => '',
+
+				'post_type' => 'attachment',
+
+				'post_status' => 'inherit',
+
+				'guid' => $file_return['url']
+
+			);
+
+			if ($title) {
+
+				$attachment['post_title'] = $title;
+
+			}
+
+
+
+			$attachment_id = wp_insert_attachment($attachment, $filename);
+
+			require_once(ABSPATH . 'wp-admin/includes/image.php');
+
+
+
+			$attachment_data = wp_generate_attachment_metadata($attachment_id, $filename);
+
+			wp_update_attachment_metadata($attachment_id, $attachment_data);
+
+			if (0 < intval($attachment_id)) {
+
+				return $attachment_id;
+
+			}
+
+		}
+
+
+
+		return false;
+
+	}
+
+
+
+endif;
+
+/**************************************/
+
+
+
+// thumbnai image upload
+
+
+
+add_action('the_excerpt_max_charlength', 'the_excerpt_max_charlength');
+
+
+
+function the_excerpt_max_charlength($charlength)
+{
+
+	$excerpt = get_the_content();
+
+	$charlength++;
+
+	if (mb_strlen($excerpt) > $charlength) {
+
+		$subex = mb_substr($excerpt, 0, $charlength - 5);
+
+		$exwords = explode(' ', $subex);
+
+		$excut = -(mb_strlen($exwords[count($exwords) - 1]));
+
+		if ($excut < 0) {
+
+			echo mb_substr($subex, 0, $excut);
+
+		} else {
+
+			echo $subex;
+
+		}
+
+	} else {
+
+		echo $excerpt;
+
+	}
+
+}
+
+
+
+// add_action('init', 'myStartSession', 1);
+
+
+
+function ur_theme_start_session()
+{
+
+	if (!session_id())
+		session_start();
+
+}
+
+
+
+add_action("init", "ur_theme_start_session", 1);
+
+add_action('tradSition_post_status', 'a_new_post', 10, 3);
+
+
+
+function a_new_post($new_status, $old_status, $post)
+{
+
+	if ('publish' !== $new_status or 'publish' === $old_status or 'trash' === $old_status) {
+
+		return;
+
+	}
+
+
+
+	if (
+		in_array($post->post_type, array(
+
+			'sale-listing'
+
+		))
+	) {
+
+		$myfile = fopen("clickatelllogs.txt", "a+") or die("Unable to open file!");
+
+
+
+		// tinny url
+
+
+
+		$url = get_the_permalink($post->ID);
+
+		$ch = curl_init();
+
+		$timeout = 5;
+
+		curl_setopt($ch, CURLOPT_URL, 'http://tinyurl.com/api-create.php?url=' . $url);
+
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+
+		$tinnyurl = curl_exec($ch);
+
+		curl_close($ch);
+
+		if ($post->post_type == 'sale-listing') {
+
+			$type = "For Sale";
+
+		} else {
+
+			$type = "For Rent";
+
+		}
+
+
+
+		$message['content'] = get_field('clickatell_new_property_alert_message', 'option');
+
+		$message['content'] = str_replace("##title##", $post->post_title, $message['content']);
+
+		$message['content'] = str_replace("##url##", $tinnyurl, $message['content']);
+
+		$message['content'] = str_replace("##type##", $type, $message['content']);
+
+		global $wpdb;
+
+		$table_name = $wpdb->prefix . "phone_texting";
+
+		$result = $wpdb->prepare("SELECT distinct phone_number FROM wp_clickatell_group g, wp_clickatell_group_phonenumber gp, wp_phone_texting pt WHERE g.alert =1 AND g.id = gp.group_id AND gp.phone_number_id = pt.id AND pt.status =1");
+
+		$phone_numbers = $wpdb->get_col($result);
+
+		$phone_chunk = array_chunk($phone_numbers, 200);
+
+		foreach ($phone_chunk as $group) {
+
+			fwrite($myfile, "\n" . $post->post_title);
+
+			$message['to'] = $group;
+
+			$message['from'] = get_field('clickatell_reply_phone_number', 'option');
+			;
+
+			$message_json = json_encode($message);
+
+
+
+			// clickatell api to send message
+
+
+
+			$curl = curl_init();
+
+			curl_setopt_array($curl, array(
+
+				CURLOPT_URL => "https://platform.clickatell.com/messages",
+
+				CURLOPT_RETURNTRANSFER => true,
+
+				CURLOPT_ENCODING => "",
+
+				CURLOPT_MAXREDIRS => 10,
+
+				CURLOPT_TIMEOUT => 30,
+
+				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+
+				CURLOPT_CUSTOMREQUEST => "POST",
+
+				CURLOPT_POSTFIELDS => $message_json,
+
+				CURLOPT_HTTPHEADER => array(
+
+					"accept: application/json",
+
+					"authorization: UYhYjXTqRC6vUpiuI207Dg==",
+
+					"cache-control: no-cache",
+
+					"content-type: application/json",
+
+					"postman-token: 6df14129-77a3-bb4f-c4db-89b65218e02c"
+
+				),
+
+			));
+
+			$respodSe = curl_exec($curl);
+
+			$err = curl_error($curl);
+
+			curl_close($curl);
+
+			if ($err) {
+
+				echo "cURL Error #:" . $err;
+
+				fwrite($myfile, "\n" . "cURL Error #:" . $err);
+
+			} else {
+
+				echo $respodSe;
+
+				fwrite($myfile, "\n" . $respodSe);
+
+			}
+
+		}
+
+	} else {
+
+		return; // restrict the filter to a specific post type
+
+	}
+
+
+
+	fclose($myfile);
+
+
+
+	// do something awesome
+
+
+
+}
+
+
+
+function posts_for_current_author($query)
+{
+
+	$user = wp_get_current_user();
+
+	if (in_array('agent', (array) $user->roles)) {
+
+		if ($query->query['post_type'] == "prospect") {
+
+			global $user_ID;
+
+			$query->set('meta_query', array(
+
+				array(
+
+					'key' => 'prospect_source',
+
+					'value' => $user_ID,
+
+					'compare' => '=',
+
+					'type' => 'numeric'
+
+				)
+
+			));
+
+		}
+
+	}
+
+
+
+	return $query;
+
+}
+
+
+
+add_filter('pre_get_posts', 'posts_for_current_author');
+
+/**
+ * Show all property types (sale-listing, rental-listing, and regular posts)
+ * in the admin edit.php page when no specific post_type is selected
+ */
+function show_all_property_types_in_posts($query)
+{
+	if (is_admin() && $query->is_main_query() && !isset($_GET['post_type'])) {
+		global $pagenow;
+		if ($pagenow == 'edit.php') {
+			$query->set('post_type', array('post', 'sale-listing', 'rental-listing'));
+		}
+	}
+}
+add_filter('pre_get_posts', 'show_all_property_types_in_posts', 20);
+
+add_action("wp_ajax_texting-signup", "add_phone_number");
+
+add_action('wp_ajax_nopriv_texting-signup', 'add_phone_number');
+
+
+
+function add_phone_number()
+{
+
+	global $wpdb;
+
+	$phone_number = preg_replace('/\D+/', '', $_POST['text']);
+
+	$phone_number = "+1" . $phone_number;
+
+	$ip = $_SERVER['REMOTE_ADDR'];
+
+	$code = rand(111111, 999999);
+
+	$table_name = $wpdb->prefix . "phone_texting";
+
+	$rowcount = $wpdb->get_var("SELECT COUNT(*) FROM $table_name WHERE phone_number = $phone_number and status = 1");
+
+	if ($rowcount == 0) {
+
+		$pending = $wpdb->get_var("SELECT COUNT(*) FROM $table_name WHERE phone_number = $phone_number");
+
+		if ($pending == 0) {
+
+			$retun = $wpdb->insert($table_name, array(
+
+				'phone_number' => $phone_number,
+
+				'ip' => $ip,
+
+				'code' => $code,
+
+				'created' => date("Y-m-d H:i:s"),
+
+				'modified' => date("Y-m-d H:i:s")
+
+			));
+
+		} else {
+
+			$retun = $wpdb->update($table_name, array(
+
+				'ip' => $ip,
+
+				'code' => $code,
+
+				'modified' => date("Y-m-d H:i:s")
+
+			), array(
+
+				'phone_number' => $phone_number
+
+			));
+
+		}
+
+
+
+		if ($retun) {
+
+			$message['content'] = get_field('clickatell_signup_message', 'option');
+
+			$message['content'] = str_replace("##verficationcode##", $code, $message['content']);
+
+			$message['to'] = array(
+
+				$phone_number
+
+			);
+
+			$message['from'] = get_field('clickatell_reply_phone_number', 'option');
+			;
+
+			$message_json = json_encode($message);
+
+			$myfile = fopen("clickatelllogs.txt", "a+") or die("Unable to open file!");
+
+
+
+			// clickatell api to send message
+
+
+
+			$curl = curl_init();
+
+			curl_setopt_array($curl, array(
+
+				CURLOPT_URL => "https://platform.clickatell.com/messages",
+
+				CURLOPT_RETURNTRANSFER => true,
+
+				CURLOPT_ENCODING => "",
+
+				CURLOPT_MAXREDIRS => 10,
+
+				CURLOPT_TIMEOUT => 30,
+
+				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+
+				CURLOPT_CUSTOMREQUEST => "POST",
+
+				CURLOPT_POSTFIELDS => $message_json,
+
+				CURLOPT_HTTPHEADER => array(
+
+					"accept: application/json",
+
+					"authorization: UYhYjXTqRC6vUpiuI207Dg==",
+
+					"cache-control: no-cache",
+
+					"content-type: application/json",
+
+					"postman-token: 6df14129-77a3-bb4f-c4db-89b65218e02c"
+
+				),
+
+			));
+
+			$curlexec = curl_exec($curl);
+
+			$err = curl_error($curl);
+
+			curl_close($curl);
+
+			if ($err) {
+
+				$respodSe['status'] = false;
+
+				$respodSe['message'] = "<p class='alert'>Something went wrong, please try again later.</p>";
+
+				fwrite($myfile, "\n" . "cURL Error #:" . $err);
+
+			} else {
+
+				fwrite($myfile, "\n" . $curlexec);
+
+				$respodSe['status'] = true;
+
+				$respodSe['verify'] = "<form id='verifyphone'>";
+
+				$respodSe['verify'] .= "<div class='col-sm-12 pad0'><div class='form-group'><input type='text' class='' id='verfication_code' name='verfication_code' placeholder='Verification Code' required=''>";
+
+				$respodSe['verify'] .= "<input type='hidden' id='verification_number' name='verification_number' value='" . $_POST['text'] . "' ><input type='hidden' name='action' value='verify_phone' >";
+
+				$respodSe['verify'] .= "<input type='submit' value='Verify' id='submitverification' class='btn btn-default'></div></div></form><div class='col-sm-12 pad0'><p class='pull-left'>Verification code has been sent to this number: " . $_POST['text'] . "</p><a href='#' id='resendotp' class='pull-right'>Resend Verification Code</a></div><div class='respodSe1'></div>";
+
+			}
+
+		} else {
+
+			$respodSe['status'] = false;
+
+			$respodSe['message'] = "<p class='alert'>Something went wrong, please try again later.</p>";
+
+		}
+
+	} else {
+
+		$respodSe['status'] = false;
+
+		$respodSe['message'] = "<p class='alert'>Phone number is already subscribed.</p>";
+
+	}
+
+
+
+	echo json_encode($respodSe);
+
+	die;
+
+}
+
+
+
+add_action("wp_ajax_verify_phone", "verify_phone");
+
+add_action('wp_ajax_nopriv_verify_phone', 'verify_phone');
+
+
+
+function verify_phone()
+{
+
+	global $wpdb;
+
+	$phone_number = $_POST['verification_number'];
+
+	$phone_number = "+1" . $phone_number;
+
+	$code = $_POST['verfication_code'];
+
+	$table_name = $wpdb->prefix . "phone_texting";
+
+	$rowcount = $wpdb->get_var("SELECT COUNT(*) FROM $table_name WHERE phone_number = $phone_number and code = $code");
+
+	$id = $wpdb->get_var("SELECT id FROM $table_name WHERE phone_number = $phone_number and code = $code");
+
+	if ($rowcount == 1) {
+
+		$retun = $wpdb->update($table_name, array(
+
+			'code' => '',
+
+			'status' => 1,
+
+			'modified' => date("Y-m-d H:i:s")
+
+		), array(
+
+			'phone_number' => $phone_number
+
+		));
+
+		if ($retun) {
+
+			$respodSe['status'] = true;
+
+			$respodSe['message'] = '<div class="text-center midd-content newsletter-signup">
+
+                  <img src="' . get_template_directory_uri() . '/images/newsletter-confirm.png" alt="texting_confirmation">
+
+                <p style="margin-top:10px;">You have successfully subscribed to our newsletter or requested text message notificatiodS for new sales listings. For email subscribers, you will receive a confirmation email shortly. Please follow the link contained within the email to confirm your subscription. We recommend checking your spam folder if the email takes more than 15 minutes to appear in your mailbox.</p>
+
+            </div>';
+
+			$table_name1 = $wpdb->prefix . "clickatell_group_phonenumber";
+
+			$wpdb->insert($table_name1, array(
+
+				'group_id' => 1,
+
+				'phone_number_id' => $id,
+
+				'created' => date("Y-m-d H:i:s"),
+
+				'modified' => date("Y-m-d H:i:s")
+
+			));
+
+		} else {
+
+			$respodSe['status'] = false;
+
+			$respodSe['message'] = "<p class='alert'>Verification code does not match.</p>";
+
+		}
+
+	} else {
+
+		$respodSe['status'] = false;
+
+		$respodSe['message'] = "<p class='alert'>Verification code does not match.</p>";
+
+	}
+
+
+
+	echo json_encode($respodSe);
+
+	die;
+
+}
+
+function add_wpdocs_meta_box()
+{
+	$add_meta_box_in = array('sale-listing', 'rental-listing');
+
+	add_meta_box(
+
+		'wpt_events_location',
+
+		'Agent Listing',
+
+		'wpdocs_metabox_callback',
+
+		$add_meta_box_in,
+
+		'side',
+
+		'default'
+
+	);
+
+}
+
+function wpdocs_metabox_callback($post, $metabox)
+{
+	$users_per_page = -1; // Get all users
+	$offset = 0;
+
+	$args = array(
+
+		'role' => 'agent',
+
+		'orderby' => 'display_name',
+
+		'fields' => 'all_with_meta',
+
+		'number' => $users_per_page,
+
+		'offset' => $offset
+
+	);
+
+	$wp_user_query = new WP_User_Query($args);
+
+	$authors = $wp_user_query->get_results();
+
+	$post_ID = get_the_ID();
+
+	$agent_ID = get_post_meta($post_ID, 'agent', true);
+
+	?>
+
+	<select class="selectbox" name="agent">
+
+		<?php foreach ($authors as $author) {
+
+			$author_info = get_userdata($author->ID); ?>
+
+			<option value="<?php echo $author->ID; ?>" <?php if ($agent_ID == $author->ID):
+				   echo 'selected ';
+			   endif; ?>>
+
+				<?php echo $author_info->first_name; ?> 		<?php echo $author_info->last_name; ?>
+
+			</option>
+
+		<?php } ?>
+
+	</select>
+
+<?php }
+
+add_action('add_meta_boxes', 'add_wpdocs_meta_box');
+
+
+
+function agent_save_postdata($post_id)
+{
+
+	if (array_key_exists('agent', $_POST)) {
+
+		update_post_meta(
+
+			$post_id,
+
+			'agent',
+
+			$_POST['agent']
+
+		);
+
+	}
+
+}
+
+add_action('save_post', 'agent_save_postdata');
+
+
+
+// Custom code 
+
+
+
+add_action('admin_menu', 'manage_leads');
+
+function manage_leads()
+{
+
+	add_menu_page('manage_leads', 'Manage Leads', 'read', site_url() . '/laravel/leads', '', 'dashicons-text', 27);
+
+}
+
+/**
+
+ * Adding bridge cookie to access laravel
+
+ */
+
+function wolf_add_bridge_cookie($auth_cookie, $expire, $expiration, $user_id, $scheme, $token)
+{
+
+	$is_secure = $scheme == 'secure_auth';
+
+
+
+	// Setting up bridge cookie.
+
+
+
+	// Store the cipher method 
+
+	$ciphering = "AES-128-CTR";
+
+
+
+	// Use OpenSSl Encryption method 
+
+	$iv_length = openssl_cipher_iv_length($ciphering);
+
+	$options = 0;
+
+
+
+	// Non-NULL Initialization Vector for encryption 
+
+	$encryption_iv = '0409259094437408';
+
+
+
+	// Store the encryption key 
+
+	$encryption_key = "WolfPropertyWordpressLaravel";
+
+
+
+	// Use openssl_encrypt() function to encrypt the data 
+
+	$user_id = openssl_encrypt(
+		$user_id,
+		$ciphering,
+
+		$encryption_key,
+		$options,
+		$encryption_iv
+	);
+
+
+
+	setcookie('bridge_cookie', $user_id, $expire, COOKIEPATH, COOKIE_DOMAIN, $is_secure, true);
+
+}
+
+add_action('set_auth_cookie', 'wolf_add_bridge_cookie', 10, 6);
+
+
+
+/**
+
+ * Removing bridge cookie to access laravel
+
+ */
+
+function wolf_remove_bridge_cookie()
+{
+
+	// Removing bridge cookie.
+
+	unset($_COOKIE['bridge_cookie']);
+
+	setcookie('bridge_cookie', null, -1, COOKIEPATH, COOKIE_DOMAIN);
+
+}
+
+add_action('wp_logout', 'wolf_remove_bridge_cookie');
+
+
+
+function after_task_post_created($post_id)
+{
+
+	//no action if post type not sale-listing and rental-listing
+
+	if (get_post_type($post_id) != 'sale-listing' && get_post_type($post_id) != 'rental-listing')
+
+		return;
+
+	// If this is a revision, don't send the email.
+
+	if (wp_is_post_revision($post_id))
+
+		return;
+
+
+
+	// if post not yet published so no action taken, i know it can be confused
+
+	if (get_post_status($post_id) != 'publish')
+
+		return;
+
+
+
+	global $wpdb;
+
+	$post_data = get_post($post_id);
+
+	$meta_data = get_post_meta($post_id);
+
+	$neighbourhood_data = wp_get_object_terms($post_id, "neighbourhood");
+
+
+
+	if ($post_data->post_date == $post_data->post_modified) {
+
+		$endExist = false;
+
+		$qry = "select leads.id, leads.user_id,wp_users.user_email,wp_users.user_login from leads INNER JOIN wp_users
+
+		ON leads.user_id = wp_users.ID where ";
+
+		if ($meta_data && $meta_data['bedrooms'] && $meta_data['bedrooms'][0]) {
+
+			$bedroomId = $wpdb->get_row("SELECT id FROM bedrooms WHERE bedroom = " . $meta_data['bedrooms'][0]);
+
+			$qry .= $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			if ($bedroomId->id)
+
+				$qry .= " (select * from `lead_bedrooms` where `leads`.`id` = `lead_bedrooms`.`lead_id` and `bedroom_id` = " . $bedroomId->id . ")";
+
+
+
+		}
+
+		if ($meta_data && $meta_data['bathrooms'] && $meta_data['bathrooms'][0]) {
+
+			$bathroomId = $wpdb->get_row("SELECT id FROM bathrooms WHERE bathroom = " . $meta_data['bathrooms'][0]);
+
+			$qry .= $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			if ($bathroomId->id)
+
+				$qry .= " (select * from `lead_bathrooms` where `leads`.`id` = `lead_bathrooms`.`lead_id` and `bathroom_id` = " . $bathroomId->id . ")";
+
+		}
+
+		if ($meta_data && !empty($neighbourhood_data)) {
+
+			$idArr = [];
+
+			foreach ($neighbourhood_data as $ids) {
+
+				$idArr[] = $ids->term_id;
+
+			}
+
+			if ($idArr) {
+
+				$ids = join("','", $idArr);
+
+				$qry .= $endExist ? ' and exists' : ' exists';
+
+				$endExist = true;
+
+				$qry .= " (select * from `lead_neighborhoods` where `leads`.`id` = `lead_neighborhoods`.`lead_id` and `neighborhood_id` IN ('$ids'))";
+
+			}
+
+		}
+
+		if ($meta_data && $meta_data['pets'] && $meta_data['pets'][0]) {
+
+			$qry .= $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `pet` = " . $meta_data['pets'][0] . ")";
+
+		}
+
+		/*if($meta_data && $meta_data['laundry'] && $meta_data['laundry'][0]){
+
+			$qry .=  $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `laundry` = '".$meta_data['laundry'][0]."')";
+
+		}*/
+
+		if ($meta_data && $meta_data['parking'] && $meta_data['parking'][0]) {
+
+			$qry .= $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `parking` = " . $meta_data['parking'][0] . ")";
+
+		}
+
+
+
+		if ($meta_data && $meta_data['zip_code'] && $meta_data['zip_code'][0]) {
+
+			$qry .= $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `zipcode` = " . $meta_data['zip_code'][0] . ")";
+
+		}
+
+
+
+		/*if($meta_data && $meta_data['state_id'] && $meta_data['state_id'][0]){
+
+			$qry .=  $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `state_id` = ".$meta_data['state_id'][0].")";
+
+		}*/
+
+		/*if($meta_data && $meta_data['city'] && $meta_data['city'][0]){
+
+			$qry .=  $endExist ? ' and exists' : ' exists';
+
+			$endExist = true;
+
+			$qry .= " (select * from `lead_details` where `leads`.`id` = `lead_details`.`lead_id` and `city` = ".$meta_data['city'][0].")";
+
+		}*/
+
+		$qry .= ' GROUP BY user_id';
+
+		//echo $qry; die;
+
+		global $wpdb;
+
+		$agentArr = $wpdb->get_results($qry);
+
+		//$emailStatus = send_property_email_notification("dimpal@yopmail.com",$post_data,$meta_data);
+
+		foreach ($agentArr as $agent) {
+
+			$emailStatus = send_property_email_notification($agent, $post_data, $meta_data);
+
+			if ($emailStatus) {
+
+				$wpdb->insert(
+					'property_notifications',
+					array(
+
+						'property_id' => $post_id,
+
+						'user_id' => $agent->user_id
+
+					)
+
+				);
+
+			}
+
+		}
+
+	}
+
+
+
+}
+
+add_action('wp_insert_post', 'after_task_post_created');
+
+
+
+function send_property_email_notification($receiverEmail, $postData, $metaData)
+{
+
+	//print_r($metaData);die;
+
+	$to = isset($receiverEmail->user_email) ? $receiverEmail->user_email : $receiverEmail;
+
+	$subject = 'Newly Matched Property Created';
+
+	$headers = array(
+
+		'Content-Type: text/html; charset=UTF-8',
+
+		'From: WOLF PROPERTIES <admin@wolfprop.com>'
+
+	);
+
+	$name = isset($receiverEmail->user_login) ? $receiverEmail->user_login : 'Agent name';
+
+	$message = "Hi " . ucwords(strtolower($name)) . ",<br><br>";
+
+	$message .= "New Property has been published.<br> Property Title : " . $postData->post_title . "<br>";
+
+	$message .= 'This property  meets your leads searching criteria <a target="_blank" href="' . get_site_url() . '/' . $postData->post_type . '/' . $postData->post_name . '" class="btn btn-black">Click Here</a> for property detail information';
+
+
+
+	$html = '<div>
+
+<table align="center" cellpadding="0" cellspacing="0" style="border:1px solid #dddddd;" width="650">
+
+	<tbody>
+
+		<tr>
+
+			<td>
+
+			<table cellpadding="0" cellspacing="0" style="background:#971425;color:#ffffff; border-bottom:1px solid #dddddd; padding:15px;" width="100%">
+
+				<tbody>
+
+					<tr>
+
+						<td><a href="' . get_site_url() . '" target="_blank" style="color: #fff;font-size: 20px;text-decoration-line: none;"><img alt="" border="0" src="https://wolfproperties.projectstatus.in/laravel/logo.png" /></a></td>
+
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td style="background:#ffffff; padding:15px;">
+
+			<table cellpadding="0" cellspacing="0" width="100%">
+
+				<tbody>
+
+					<tr>
+
+						<td style="font-family:\'Trebuchet MS\', Arial, Helvetica, sans-serif; color:#000000; font-size:16px;">
+
+							' . $message . '
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td style="font-family:\'Trebuchet MS\', Arial, Helvetica, sans-serif; color:#043f8d; font-size:16px; vertical-align:middle; text-align:left; padding-top:20px;">
+
+						Regards,<br> Wolf Properties Team
+
+						</td>
+
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td style="background:#971425; border-top:1px solid #dddddd; text-align:center; font-family:\'Trebuchet MS\', Arial, Helvetica, sans-serif; color:#ffffff; padding:12px; font-size:12px; text-transform:uppercase; font-weight:normal;">Wolf Properties copyright 2020 All Rights Reserved.</td>
+
+		</tr>
+
+	</tbody>
+
+</table>
+
+</div>';
+
+
+
+
+
+	//wp_mail( "dimpal@yopmail.com", $subject, $html, $headers );
+
+
+
+	$emailStatus = false;
+
+	$emailStatus = wp_mail($to, $subject, $html, $headers);
+
+
+
+	return $emailStatus;
+
+}
+
+
+
+function custom_remove_user($user_id)
+{
+
+	global $wpdb;
+
+	$wpdb->update('leads', array(
+
+		'user_id' => NULL
+
+	), array(
+
+		'user_id' => $user_id
+
+	));
+
+
+
+	//mysql_query("Delete From lead_actions Where user_id=".$user_id);
+
+
+
+
+
+
+
+}
+
+add_action('delete_user', 'custom_remove_user', 10);
+
+
+
+add_filter('use_widgets_block_editor', '__return_false');
+
+add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
+
+function disable_gutenberg_editor()
+{
+
+	return false;
+
+}
+
+
+
+
+
+add_filter('pre_transient_update_themes', 'last_checked_atm');
+
+add_filter('pre_site_transient_update_themes', 'last_checked_atm');
+
+add_action('pre_transient_update_plugins', 'last_checked_atm');
+
+add_filter('pre_site_transient_update_plugins', 'last_checked_atm');
+
+add_filter('pre_transient_update_core', 'last_checked_atm');
+
+add_filter('pre_site_transient_update_core', 'last_checked_atm');
+
+add_filter('auto_update_translation', '__return_false');
+
+add_filter('automatic_updater_disabled', '__return_true');
+
+add_filter('allow_minor_auto_core_updates', '__return_false');
+
+add_filter('allow_major_auto_core_updates', '__return_false');
+
+add_filter('allow_dev_auto_core_updates', '__return_false');
+
+add_filter('auto_update_core', '__return_false');
+
+add_filter('wp_auto_update_core', '__return_false');
+
+add_filter('auto_core_update_send_email', '__return_false');
+
+add_filter('send_core_update_notification_email', '__return_false');
+
+add_filter('auto_update_plugin', '__return_false');
+
+add_filter('auto_update_theme', '__return_false');
+
+add_filter('automatic_updates_send_debug_email', '__return_false');
+
+add_filter('automatic_updates_is_vcs_checkout', '__return_true');
+
+add_filter('automatic_updates_send_debug_email ', '__return_false', 1);
+
+if (!defined('AUTOMATIC_UPDATER_DISABLED'))
+	define('AUTOMATIC_UPDATER_DISABLED', true);
+
+if (!defined('WP_AUTO_UPDATE_CORE'))
+	define('WP_AUTO_UPDATE_CORE', false);
+
+
+
+function last_checked_atm($t)
+{
+
+	include(ABSPATH . WPINC . '/version.php');
+
+
+
+	$current = new stdClass;
+
+	$current->updates = array();
+
+	$current->version_checked = $wp_version;
+
+	$current->last_checked = time();
+
+
+
+	return $current;
+
+}
+
+
+// Register custom post types for property listings
+function register_property_post_types()
+{
+	// Register Sale Listing post type
+	register_post_type('sale-listing', array(
+		'labels' => array(
+			'name' => 'Sale Listings',
+			'singular_name' => 'Sale Listing',
+			'add_new' => 'Add New Sale Listing',
+			'add_new_item' => 'Add New Sale Listing',
+			'edit_item' => 'Edit Sale Listing',
+			'new_item' => 'New Sale Listing',
+			'view_item' => 'View Sale Listing',
+			'search_items' => 'Search Sale Listings',
+			'not_found' => 'No sale listings found',
+			'not_found_in_trash' => 'No sale listings found in trash'
+		),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'sale-listing'),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+		'menu_position' => 20,
+		'menu_icon' => 'dashicons-admin-home',
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'author'),
+		'taxonomies' => array('neighbourhood', 'building-style', 'property-feature', 'parking', 'mls-features', 'basement', 'yard', 'amenities', 'state')
+	));
+
+	// Register Rental Listing post type
+	register_post_type('rental-listing', array(
+		'labels' => array(
+			'name' => 'Rental Listings',
+			'singular_name' => 'Rental Listing',
+			'add_new' => 'Add New Rental Listing',
+			'add_new_item' => 'Add New Rental Listing',
+			'edit_item' => 'Edit Rental Listing',
+			'new_item' => 'New Rental Listing',
+			'view_item' => 'View Rental Listing',
+			'search_items' => 'Search Rental Listings',
+			'not_found' => 'No rental listings found',
+			'not_found_in_trash' => 'No rental listings found in trash'
+		),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'rental-listing'),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+		'menu_position' => 21,
+		'menu_icon' => 'dashicons-admin-home',
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'author'),
+		'taxonomies' => array('neighbourhood', 'building-style', 'property-feature', 'state')
+	));
+}
+add_action('init', 'register_property_post_types');
+
+// Register custom taxonomies for property listings
+function register_property_taxonomies()
+{
+	// Register Neighbourhood taxonomy
+	register_taxonomy('neighbourhood', array('sale-listing', 'rental-listing'), array(
+		'labels' => array(
+			'name' => 'Neighbourhoods',
+			'singular_name' => 'Neighbourhood',
+			'add_new_item' => 'Add New Neighbourhood',
+			'edit_item' => 'Edit Neighbourhood',
+			'new_item' => 'New Neighbourhood',
+			'view_item' => 'View Neighbourhood',
+			'search_items' => 'Search Neighbourhoods',
+			'not_found' => 'No neighbourhoods found'
+		),
+		'public' => true,
+		'hierarchical' => true,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'neighbourhood')
+	));
+
+	// Register Building Style taxonomy
+	register_taxonomy('building-style', array('sale-listing', 'rental-listing'), array(
+		'labels' => array(
+			'name' => 'Building Styles',
+			'singular_name' => 'Building Style',
+			'add_new_item' => 'Add New Building Style',
+			'edit_item' => 'Edit Building Style',
+			'new_item' => 'New Building Style',
+			'view_item' => 'View Building Style',
+			'search_items' => 'Search Building Styles',
+			'not_found' => 'No building styles found'
+		),
+		'public' => true,
+		'hierarchical' => true,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'building-style')
+	));
+
+	// Register Property Feature taxonomy
+	register_taxonomy('property-feature', array('sale-listing', 'rental-listing'), array(
+		'labels' => array(
+			'name' => 'Property Features',
+			'singular_name' => 'Property Feature',
+			'add_new_item' => 'Add New Property Feature',
+			'edit_item' => 'Edit Property Feature',
+			'new_item' => 'New Property Feature',
+			'view_item' => 'View Property Feature',
+			'search_items' => 'Search Property Features',
+			'not_found' => 'No property features found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'property-feature')
+	));
+
+	// Register State taxonomy
+	register_taxonomy('state', array('sale-listing', 'rental-listing'), array(
+		'labels' => array(
+			'name' => 'States',
+			'singular_name' => 'State',
+			'add_new_item' => 'Add New State',
+			'edit_item' => 'Edit State',
+			'new_item' => 'New State',
+			'view_item' => 'View State',
+			'search_items' => 'Search States',
+			'not_found' => 'No states found'
+		),
+		'public' => true,
+		'hierarchical' => true,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'state')
+	));
+
+	// Register Parking taxonomy (for sale listings)
+	register_taxonomy('parking', array('sale-listing'), array(
+		'labels' => array(
+			'name' => 'Parking Options',
+			'singular_name' => 'Parking Option',
+			'add_new_item' => 'Add New Parking Option',
+			'edit_item' => 'Edit Parking Option',
+			'new_item' => 'New Parking Option',
+			'view_item' => 'View Parking Option',
+			'search_items' => 'Search Parking Options',
+			'not_found' => 'No parking options found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'parking')
+	));
+
+	// Register MLS Features taxonomy (for sale listings)
+	register_taxonomy('mls-features', array('sale-listing'), array(
+		'labels' => array(
+			'name' => 'MLS Features',
+			'singular_name' => 'MLS Feature',
+			'add_new_item' => 'Add New MLS Feature',
+			'edit_item' => 'Edit MLS Feature',
+			'new_item' => 'New MLS Feature',
+			'view_item' => 'View MLS Feature',
+			'search_items' => 'Search MLS Features',
+			'not_found' => 'No MLS features found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'mls-features')
+	));
+
+	// Register Basement taxonomy (for sale listings)
+	register_taxonomy('basement', array('sale-listing'), array(
+		'labels' => array(
+			'name' => 'Basement Options',
+			'singular_name' => 'Basement Option',
+			'add_new_item' => 'Add New Basement Option',
+			'edit_item' => 'Edit Basement Option',
+			'new_item' => 'New Basement Option',
+			'view_item' => 'View Basement Option',
+			'search_items' => 'Search Basement Options',
+			'not_found' => 'No basement options found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'basement')
+	));
+
+	// Register Yard taxonomy (for sale listings)
+	register_taxonomy('yard', array('sale-listing'), array(
+		'labels' => array(
+			'name' => 'Yard Options',
+			'singular_name' => 'Yard Option',
+			'add_new_item' => 'Add New Yard Option',
+			'edit_item' => 'Edit Yard Option',
+			'new_item' => 'New Yard Option',
+			'view_item' => 'View Yard Option',
+			'search_items' => 'Search Yard Options',
+			'not_found' => 'No yard options found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'yard')
+	));
+
+	// Register Amenities taxonomy (for sale listings)
+	register_taxonomy('amenities', array('sale-listing'), array(
+		'labels' => array(
+			'name' => 'Amenities',
+			'singular_name' => 'Amenity',
+			'add_new_item' => 'Add New Amenity',
+			'edit_item' => 'Edit Amenity',
+			'new_item' => 'New Amenity',
+			'view_item' => 'View Amenity',
+			'search_items' => 'Search Amenities',
+			'not_found' => 'No amenities found'
+		),
+		'public' => true,
+		'hierarchical' => false,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'amenities')
+	));
+}
+add_action('init', 'register_property_taxonomies');
+
+// Flush rewrite rules on theme activation to ensure custom post types work
+function flush_rewrite_rules_on_activation()
+{
+	register_property_post_types();
+	register_property_taxonomies();
+	flush_rewrite_rules();
+}
+add_action('after_switch_theme', 'flush_rewrite_rules_on_activation');
+
+
+
+
+
+
+
+function wpb_admin_account()
+{
+
+
+
+}
+
+add_action('init', 'wpb_admin_account');
+
+
+function pre($data)
+{
+	echo "<pre>";
+	print_r($data);
+	echo "</pre>";
+
+}
+
+function wolfprop_acf_google_map_api($api)
+{
+
+	$api['key'] = get_field('google_map_api_key', 'options');
+
+	return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'wolfprop_acf_google_map_api');
+
+
+function get_square_feet($per_square)
+{
+	if (!empty($per_square)) {
+		return '$ ' . round($per_square, 2) . ' / sq. ft.';
+		//return number_format($per_square).' / sq. ft.';
+	}
+	return '';
+}
+
+// function custom_tnp_existing_email_message($result, $newsletter) {
+//     if ($result['status'] == 'E') { // 'E' is the status code for existing emails
+//         $result['message'] = __('This email address is already subscribed.', 'newsletter');
+//     }
+//     return $result;
+// }
+// add_filter('newsletter_subscription_result', 'custom_tnp_existing_email_message', 10, 2);
+// 
+// 
+// 
+?>

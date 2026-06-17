@@ -1,0 +1,911 @@
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:52 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:52 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:52 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:52 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:53 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:53 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:53 UTC] PHP Warning:  Undefined array key "css_toggle" in /home/wolfprop/public_html/wp-content/plugins/wd-twitter-feed/includes/TwitterFeed.php on line 59
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:54 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:54 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:56 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:28:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:57 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:57 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:57 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:28:59 UTC] Property Query for tab 'all': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => Array
+        (
+            [0] => sale-listing
+            [1] => rental-listing
+        )
+
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:28:59 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:28:59 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:29:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:29:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:29:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:29:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:29:00 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:29:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:29:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:29:02 UTC] Query Results for tab 'all': Found 5 posts
+[17-Jun-2026 06:29:02 UTC] Property Query for tab 'sale': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => sale-listing
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:05 UTC] Query Results for tab 'sale': Found 5 posts
+[17-Jun-2026 06:29:05 UTC] Property Query for tab 'rent': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => rental-listing
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:05 UTC] Query Results for tab 'rent': Found 0 posts
+[17-Jun-2026 06:29:05 UTC] Debug Query Results: Found 41 total properties
+[17-Jun-2026 06:29:05 UTC] Property Query for tab 'sold': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => Array
+        (
+            [0] => sale-listing
+            [1] => rental-listing
+        )
+
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [key] => sold_under_contract
+                    [value] => 1
+                    [compare] => =
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:05 UTC] Query Results for tab 'sold': Found 36 posts
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:06 UTC] Property Query for tab 'all': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => Array
+        (
+            [0] => sale-listing
+            [1] => rental-listing
+        )
+
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:08 UTC] Query Results for tab 'all': Found 5 posts
+[17-Jun-2026 06:29:09 UTC] Property Query for tab 'sale': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => sale-listing
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:11 UTC] Query Results for tab 'sale': Found 5 posts
+[17-Jun-2026 06:29:11 UTC] Property Query for tab 'rent': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => rental-listing
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [relation] => OR
+                    [0] => Array
+                        (
+                            [key] => sold_under_contract
+                            [value] => 1
+                            [compare] => !=
+                        )
+
+                    [1] => Array
+                        (
+                            [key] => sold_under_contract
+                            [compare] => NOT EXISTS
+                        )
+
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:11 UTC] Query Results for tab 'rent': Found 0 posts
+[17-Jun-2026 06:29:11 UTC] Debug Query Results: Found 41 total properties
+[17-Jun-2026 06:29:11 UTC] Property Query for tab 'sold': Array
+(
+    [post_status] => publish
+    [posts_per_page] => 10
+    [paged] => 1
+    [post_type] => Array
+        (
+            [0] => sale-listing
+            [1] => rental-listing
+        )
+
+    [orderby] => date
+    [order] => DESC
+    [meta_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [key] => sold_under_contract
+                    [value] => 1
+                    [compare] => =
+                )
+
+        )
+
+)
+
+[17-Jun-2026 06:29:11 UTC] Query Results for tab 'sold': Found 36 posts
+[17-Jun-2026 06:29:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:29:46 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:29:46 UTC] PHP Warning:  Undefined array key "css_toggle" in /home/wolfprop/public_html/wp-content/plugins/wd-twitter-feed/includes/TwitterFeed.php on line 59
+[17-Jun-2026 06:29:46 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:00 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:00 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:00 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:00 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:02 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:02 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:02 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:06 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:06 UTC] PHP Warning:  Undefined array key "css_toggle" in /home/wolfprop/public_html/wp-content/plugins/wd-twitter-feed/includes/TwitterFeed.php on line 59
+[17-Jun-2026 06:30:06 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:30:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:07 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:07 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:12 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:12 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:12 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:12 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:13 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:13 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:30:22 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:30:22 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:30:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:30:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:30:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:30:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:30:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:32:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:18 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:18 UTC] PHP Warning:  Undefined array key "css_toggle" in /home/wolfprop/public_html/wp-content/plugins/wd-twitter-feed/includes/TwitterFeed.php on line 59
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:20 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:21 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:49 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:55 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:57 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:33:58 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:01 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:02 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:03 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:05 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:06 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:06 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:07 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:08 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:08 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:09 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:09 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:10 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:10 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:10 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:22 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:34:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:34:58 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:34:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:34:58 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:34:58 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:34:59 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:34:59 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:34:59 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:00 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:00 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:01 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:01 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:03 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:04 UTC] PHP Deprecated:  Function WP_Dependencies-&gt;add_data() was called with an argument that is <strong>deprecated</strong> since version 6.9.0! IE conditional comments are ignored by all supported browsers. in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:04 UTC] PHP Deprecated:  Use of "parent" in callables is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Dependencies/Minify/JS.php on line 127
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:35 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:35 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:36 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>rocket</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /home/wolfprop/public_html/wp-includes/functions.php on line 6170
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:36 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:37 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:37 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:39 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:40 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:40 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:41 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:41 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:41 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:41 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:41 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:42 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:42 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:43 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:43 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:43 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:43 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:43 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:44 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:47 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:47 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:47 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:48 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:48 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:48 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:48 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:49 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:49 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:49 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:50 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:54 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:54 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:54 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:55 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:55 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:35:56 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:35:57 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:05 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:05 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:06 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:07 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:07 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:08 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:08 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:08 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:09 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:10 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:10 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:11 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:12 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$options is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 26
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Creation of dynamic property WP_Rocket\Engine\Preload\SitemapPreloadSubscriber::$sitemap_preload is deprecated in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Preload/SitemapPreloadSubscriber.php on line 27
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 263
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 273
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/wolfprop/public_html/wp-content/plugins/wp-rocket/inc/Engine/Optimization/DelayJS/HTML.php on line 282
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[17-Jun-2026 06:36:23 UTC] PHP Deprecated:  Optional parameter $i declared before required parameter $post_id is implicitly treated as a required parameter in /home/wolfprop/public_html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805

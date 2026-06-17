@@ -1,0 +1,44 @@
+<?php
+/**
+Template Name: Property listing template
+*/
+
+get_header(); 
+get_sidebar('filter');
+?>
+<div class="midd-content">
+  <div class="container">
+    <div class="page-title">
+      <h1>Properties / Listings</h1>
+    </div>
+    <div class="row">
+    <div class="col-sm-4 col-xs-12 listing-sidebar margin-top30">
+      	<?php get_sidebar('left-filter'); ?>
+      </div>
+      <div class="col-sm-8 col-xs-12 listing-section margin-top30">
+	      	<div class="view-mode">
+	          <ul>
+	            <li class="active"><a href="javascript:void(0);" class="list"><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+	            <li><a href="javascript:void(0);" class="grid"><i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+	          </ul>
+	        </div>
+	        <div class="sort-outer">
+	            <label>Sort by :</label>
+	            <select class="sortby_selectbox" id="sortby">
+	              <option value="recent">Most Recent</option>
+	              <option value="price_asc"><strong>Price </strong>- Low to High</option>
+	              <option value="price_desc"><strong>Price </strong>- High to Low</option>
+	            </select>
+	        </div>
+	      <div class="property_listing">        
+	        	<img style="display: block; margin: 0 auto;" alt="loading" src="<?php echo get_template_directory_uri(); ?>/images/ring.gif">
+	      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loading">Loading&#8230;</div>
+
+
+<?php get_footer(); ?>
