@@ -12,4 +12,5 @@ laravel/storage/framework/cache/*
 laravel/storage/framework/sessions/*
 laravel/storage/framework/views/*
 
-.env
+.envwp-config.php
+wp-config.php
