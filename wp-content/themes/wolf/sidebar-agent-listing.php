@@ -1,7 +1,13 @@
 <?php 
 	$add_rental = get_site_url().'/add-rental-listing/';
 	$add_sales = get_site_url().'/add-sales-listing/';
-	$browser_url=  "http://".$_SERVER[HTTP_HOST].$_SERVER['REQUEST_URI'];
+	// $browser_url=  "http://".$_SERVER[HTTP_HOST].$_SERVER['REQUEST_URI'];
+
+  $host        = $_SERVER['HTTP_HOST'] ?? '';
+	$request_uri = $_SERVER['REQUEST_URI'] ?? '';
+	$scheme      = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) ? 'https://' : 'http://';
+	$browser_url = $scheme . $host . $request_uri;
+  
 ?>
 <div class="listing-sidebar-2">
           <div class="sidebar-box">

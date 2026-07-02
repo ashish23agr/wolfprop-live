@@ -50,9 +50,10 @@ $apiKey= get_field('google_map_api_key','options');
 			        			</div>
 			        			<div class="col-sm-6 property-price property-custom">
 						        	<?php 
-						        		$building_size=get_field( "building_size" );
-			                    		$sale_price = get_field( "listing_price" );
-			                    		$per_square = $sale_price/$building_size;
+
+										$building_size = get_field( "building_size" );
+										$sale_price = get_field( "listing_price" );
+										$per_square = ( $building_size > 0 ) ? $sale_price / $building_size : 0;
 			                    	?>
 						          	<h2>
 						          		$<?php 
@@ -101,8 +102,8 @@ $apiKey= get_field('google_map_api_key','options');
 					                		echo '<img src="'.get_template_directory_uri().'/images/thumbnail-full.jpg" alt="thumbnail">';
 	                					}
 	                            	
-			                    	$price = get_field( "listing_price" );                    	
-			                    	$per_square = $price/$building_size;
+										$price = get_field( "listing_price" );
+										$per_square = ( $building_size > 0 ) ? $price / $building_size : 0;
 			                    ?>
 			        			<div class="agent-form-section">
 			          				<div class="agent-detail">
@@ -292,7 +293,8 @@ $apiKey= get_field('google_map_api_key','options');
 			                						</li>
 			                						<li>
 			                  							<label>Style :</label>
-			                  							<span><?php echo $term->name;?></span>
+			                  							<!-- <span><?php //echo $term->name;?></span> -->
+														  <span><?php echo is_object($term) ? $term->name : ''; ?></span>
 			                						</li>
 			                						<li>
 			                  							<label>Building Type :</label>
@@ -319,7 +321,7 @@ $apiKey= get_field('google_map_api_key','options');
 		                							</li>
 			                						<li>
 			                  							<label>Heat Source :</label>
-			                  							<span><?php echo implode(", ",$heat);?></span>
+			                  							<span><?php echo is_array( $heat ) ? implode( ", ", $heat ) : ''; ?></span>
 			                						</li>
 			                 						<li>
 			                  							<label>Air Conditioning :</label>
@@ -547,12 +549,14 @@ $apiKey= get_field('google_map_api_key','options');
 					<div style="display:none;">
 		        		<div id="ninja-slider">
 		            		<div class="slider-inner">
-		                		<ul>
-		                			<?php foreach ($property_photos as $photo){ ?>
+								<ul>
+		                			<?php if ( is_array( $property_photos ) ) {
+		                				foreach ( $property_photos as $photo ) { ?>
 			                			<li>
-			                        		<a class="ns-img" href="<?php echo $photo['photo']['url']; ?>"></a>
+			                        		<a class="ns-img" href="<?php echo esc_url( $photo['photo']['url'] ?? '' ); ?>"></a>
 			                    		</li>
-		                			<?php }	?>		                   
+		                			<?php }
+		                			} ?>
 		                		</ul>
 		                		<div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
 		            		</div>
